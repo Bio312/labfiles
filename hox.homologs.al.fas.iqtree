@@ -1,0 +1,474 @@
+IQ-TREE 2.0.6 built Jul 10 2020
+
+Input file name: hox.homologs.al.fas
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 448577
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 149 sequences with 1761 amino-acid sites
+Number of constant sites: 504 (= 28.6201% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 504 (= 28.6201% of all sites)
+Number of parsimony informative sites: 731
+Number of distinct site patterns: 1472
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: VT+F+R10
+VT+F+R10
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+VT+F+R10         -89233.165  179130.331 +        1  179285.171 +        1  180947.578 +        1
+JTT+F+R10        -89242.959  179149.919 - 5.58e-05  179304.759 - 5.58e-05  180967.166 - 5.58e-05
+JTTDCMut+F+R10   -89252.321  179168.643 - 4.79e-09  179323.483 - 4.79e-09  180985.890 - 4.79e-09
+DCMut+F+R10      -89256.567  179177.134 - 6.87e-11  179331.975 - 6.87e-11  180994.382 - 6.87e-11
+Dayhoff+F+R10    -89256.688  179177.375 - 6.09e-11  179332.216 - 6.09e-11  180994.623 - 6.09e-11
+LG+F+R10         -89268.707  179201.414 - 3.67e-16  179356.255 - 3.67e-16  181018.662 - 3.67e-16
+rtREV+F+R10      -89318.704  179301.408 -  7.1e-38  179456.248 -  7.1e-38  181118.655 -  7.1e-38
+WAG+F+R10        -89384.481  179432.963 - 1.92e-66  179587.803 - 1.92e-66  181250.210 - 1.92e-66
+Blosum62+F+R10   -89500.028  179664.057 - 1.27e-116  179818.897 - 1.27e-116  181481.304 - 1.27e-116
+PMB+F+R10        -89503.250  179670.499 - 5.06e-118  179825.340 - 5.06e-118  181487.747 - 5.06e-118
+mtInv+F+R10      -89511.024  179686.049 - 2.12e-121  179840.889 - 2.12e-121  181503.296 - 2.12e-121
+cpREV+F+R10      -89696.681  180057.362 - 4.98e-202  180212.203 - 4.98e-202  181874.610 - 4.98e-202
+JTT+R10          -89804.953  180235.905 - 8.46e-241  180371.748 - 1.13e-236  181949.154 - 3.24e-218
+mtMet+F+R10      -89737.892  180139.784 - 6.31e-220  180294.624 - 6.31e-220  181957.031 - 6.31e-220
+mtZOA+F+R10      -89741.631  180147.261 - 1.5e-221  180302.101 - 1.5e-221  181964.509 - 1.5e-221
+JTTDCMut+R10     -89830.243  180286.485 - 8.79e-252  180422.328 - 1.17e-247  181999.734 - 3.37e-229
+Dayhoff+R10      -89833.878  180293.756 - 2.32e-253  180429.598 - 3.1e-249  182007.004 - 8.88e-231
+DCMut+R10        -89834.356  180294.712 - 1.44e-253  180430.555 - 1.92e-249  182007.961 - 5.51e-231
+WAG+R10          -89894.759  180415.517 - 8.42e-280  180551.360 - 1.12e-275  182128.765 - 3.22e-257
+VT+R10           -89921.193  180468.387 - 2.78e-291  180604.229 - 3.72e-287  182181.635 - 1.07e-268
+FLU+F+R10        -89913.095  180490.189 - 5.13e-296  180645.030 - 5.13e-296  182307.437 - 5.13e-296
+HIVb+F+R10       -89997.725  180659.449 -        0  180814.290 -        0  182476.697 -        0
+mtREV+F+R10      -90094.558  180853.117 -        0  181007.957 -        0  182670.364 -        0
+mtART+F+R10      -90183.620  181031.240 -        0  181186.081 -        0  182848.488 -        0
+PMB+R10          -90271.041  181168.083 -        0  181303.925 -        0  182881.331 -        0
+mtVer+F+R10      -90285.758  181235.517 -        0  181390.357 -        0  183052.764 -        0
+LG+R10           -90388.825  181403.651 -        0  181539.493 -        0  183116.899 -        0
+LG+R9            -90404.601  181431.203 -        0  181565.132 -        0  183133.504 -        0
+LG+R8            -90422.123  181462.246 -        0  181594.279 -        0  183153.600 -        0
+LG+R7            -90444.568  181503.136 -        0  181633.288 -        0  183183.542 -        0
+LG+R6            -90481.757  181573.513 -        0  181701.802 -        0  183242.973 -        0
+LG+R5            -90544.265  181694.531 -        0  181820.971 -        0  183353.043 -        0
+LG+R4            -90640.009  181882.019 -        0  182006.627 -        0  183529.583 -        0
+Blosum62+R10     -90700.010  182026.021 -        0  182161.863 -        0  183739.269 -        0
+LG+I+G4          -90770.357  182134.714 -        0  182255.707 -        0  183760.385 -        0
+LG+G4            -90818.740  182229.481 -        0  182349.579 -        0  183849.677 -        0
+rtREV+R10        -90781.673  182189.347 -        0  182325.189 -        0  183902.595 -        0
+mtMAM+F+R10      -90753.076  182170.152 -        0  182324.993 -        0  183987.400 -        0
+LG+R3            -90877.695  182353.391 -        0  182476.183 -        0  183990.008 -        0
+cpREV+R10        -90942.557  182511.114 -        0  182646.957 -        0  184224.363 -        0
+HIVw+F+R10       -91126.124  182916.248 -        0  183071.089 -        0  184733.496 -        0
+FLU+R10          -91362.528  183351.057 -        0  183486.899 -        0  185064.305 -        0
+LG+R2            -91524.317  183642.634 -        0  183763.627 -        0  185268.304 -        0
+HIVb+R10         -91821.084  184268.169 -        0  184404.011 -        0  185981.417 -        0
+mtZOA+R10        -92905.415  186436.829 -        0  186572.671 -        0  188150.077 -        0
+mtVer+R10        -93903.378  188432.757 -        0  188568.599 -        0  190146.005 -        0
+mtREV+R10        -93924.226  188474.451 -        0  188610.294 -        0  190187.700 -        0
+mtMet+R10        -94427.196  189480.393 -        0  189616.235 -        0  191193.641 -        0
+mtART+R10        -94612.353  189850.705 -        0  189986.548 -        0  191563.954 -        0
+HIVw+R10         -94682.816  189991.631 -        0  190127.474 -        0  191704.880 -        0
+mtMAM+R10        -94900.234  190426.469 -        0  190562.311 -        0  192139.717 -        0
+mtInv+R10        -95652.621  191931.242 -        0  192067.085 -        0  193644.491 -        0
+LG+I             -95723.072  192038.144 -        0  192158.242 -        0  193658.340 -        0
+LG               -96251.108  193092.216 -        0  193211.425 -        0  194706.939 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: VT+F+R10
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.0718
+  pi(R) = 0.0611
+  pi(N) = 0.0478
+  pi(D) = 0.0402
+  pi(C) = 0.0241
+  pi(Q) = 0.0539
+  pi(E) = 0.0570
+  pi(G) = 0.0650
+  pi(H) = 0.0383
+  pi(I) = 0.0331
+  pi(L) = 0.0618
+  pi(K) = 0.0535
+  pi(M) = 0.0303
+  pi(F) = 0.0356
+  pi(P) = 0.0778
+  pi(S) = 0.0906
+  pi(T) = 0.0573
+  pi(W) = 0.0202
+  pi(Y) = 0.0410
+  pi(V) = 0.0397
+
+Model of rate heterogeneity: FreeRate with 10 categories
+Site proportion and rates:  (0.0317,0.0080) (0.0345,0.0536) (0.0290,0.1078) (0.0131,0.1917) (0.0633,0.3054) (0.0209,0.4120) (0.0682,0.5560) (0.3156,0.8849) (0.3808,1.4377) (0.0429,2.3243)
+
+ Category  Relative_rate  Proportion
+  1         0.0080         0.0317
+  2         0.0536         0.0345
+  3         0.1078         0.0290
+  4         0.1917         0.0131
+  5         0.3054         0.0633
+  6         0.4120         0.0209
+  7         0.5560         0.0682
+  8         0.8849         0.3156
+  9         1.4377         0.3808
+  10         2.3243         0.0429
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -89134.7691 (s.e. 3457.3891)
+Unconstrained log-likelihood (without tree): -12483.6409
+Number of free parameters (#branches + #model parameters): 332
+Akaike information criterion (AIC) score: 178933.5382
+Corrected Akaike information criterion (AICc) score: 179088.3786
+Bayesian information criterion (BIC) score: 180750.7857
+
+Total tree length (sum of branch lengths): 200.1032
+Sum of internal branch lengths: 58.4449 (29.2074% of tree length)
+
+WARNING: 2 near-zero internal branches (<0.0006) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Nvectensis.LOC5518689_homeobox_protein_engrailedli' is drawn at root
+
++--------------Nvectensis.LOC5518689_homeobox_protein_engrailedli
+|
+|                                        +-----------Nvectensis.LOC5521839_homeobox_protein_HoxB7A
+|                             +----------|
+|                             |          |  +-------Dgigantea.LOC114532759_homeobox_protein_HoxA9like
+|                             |          +--|
+|                             |             |               +**Dgigantea.LOC114524627_homeobox_protein_HoxB5blike
+|                             |             +---------------|
+|                             |                             +--Dgigantea.LOC114544210_homeobox_protein_HoxB5blike
+|                          +--|
+|                          |  |         +----------Nvectensis.LOC5521423_homeobox_protein_HoxC4
+|                          |  |     +---|
+|                          |  |     |   +--------Dgigantea.LOC114516149_pancreasduodenum_homeobox_p
+|                          |  |  +--|
+|                          |  |  |  |                   +--Hvulgaris.LOC105850935_homeobox_protein_mab5like
+|                          |  |  |  +-------------------|
+|                          |  |  |                      +--Hvulgaris.LOC100201084_homeobox_protein_mab5
+|                          |  +--|
+|                          |     +------------------------------------Hvulgaris.LOC100213602_homeobox_protein_HoxC6
+|                       +--|
+|                       |  |      +--------------------Nvectensis.LOC5517717_homeobox_protein_HoxB3a
+|                       |  |  +---|
+|                       |  |  |   |         +---Bbelcheri.LOC109470583_pancreasduodenum_homeobox_p
+|                       |  |  |   |      +--|
+|                       |  |  |   |      |  +------Myessoensis.NW_018406672.1_LOC110452400
+|                       |  |  |   |   +--|
+|                       |  |  |   |   |  +-----------Hsapiens.NP_0002001_pancreasduodenum_homeobox_prot
+|                       |  |  |   +---|
+|                       |  |  |       +------Aplanci.LOC110988620_pancreasduodenum_homeobox_pro
+|                       |  +--|
+|                       |     |             +----------------Myessoensis.NW_018406672.1_LOC110452409
+|                       |     +-------------|
+|                       |                   |  +-------Hsapiens.NP_0012564_homeobox_protein_CDX2_isoform_
+|                       |                   +--|
+|                       |                      +--Hsapiens.NP_0017952_homeobox_protein_CDX1
+|                    +--|
+|                    |  |                +--Bbelcheri.LOC109475825_homeobox_protein_HoxB4alike
+|                    |  |             +--|
+|                    |  |             |  +-----------Aplanci.LOC110974660_homeobox_protein_HoxB4like
+|                    |  |          +--|
+|                    |  |          |  |     +-----Hsapiens.NP_0021323_homeobox_protein_HoxA4
+|                    |  |          |  |  +--|
+|                    |  |          |  |  |  |  +---Hsapiens.NP_7058971_homeobox_protein_HoxC4
+|                    |  |          |  |  |  +--|
+|                    |  |          |  |  |     +--Hsapiens.NP_0769201_homeobox_protein_HoxB4
+|                    |  |          |  +--|
+|                    |  |          |     +---Hsapiens.NP_0554362_homeobox_protein_HoxD4
+|                    |  |     +----|
+|                    |  |     |    +------Myessoensis.NW_018485984.1_LOC110445094
+|                    |  |  +--|
+|                    |  |  |  |        +-------Bbelcheri.LOC109475859_homeobox_protein_HoxB5like
+|                    |  |  |  |     +--|
+|                    |  |  |  |     |  |     +--Hsapiens.NP_0619752_homeobox_protein_HoxA5
+|                    |  |  |  |     |  |  +--|
+|                    |  |  |  |     |  |  |  +--Hsapiens.NP_0021381_homeobox_protein_HoxB5
+|                    |  |  |  |     |  +--|
+|                    |  |  |  |     |     +----------Hsapiens.NP_0618261_homeobox_protein_HoxC5
+|                    |  |  |  |  +--|
+|                    |  |  |  |  |  |  +-------Aplanci.LOC110974633_homeobox_protein_HoxA5like
+|                    |  |  |  |  |  +--|
+|                    |  |  |  |  |     +---------Myessoensis.NW_018485984.1_LOC110445095
+|                    |  |  |  +--|
+|                    |  |  |     |      +--------Bbelcheri.LOC109475861_homeobox_protein_HoxB6like
+|                    |  |  |     |  +---|
+|                    |  |  |     |  |   +-------------Myessoensis.NW_018485984.1_LOC110445080
+|                    |  |  |     +--|
+|                    |  |  |        |  +------Bbelcheri.LOC109475860_homeobox_protein_HoxA7like
+|                    |  |  |        +--|
+|                    |  |  |           |           +----------Bbelcheri.LOC109475781_homeobox_protein_HoxD8like
+|                    |  |  |           |        +--|
+|                    |  |  |           |        |  |      +-----Myessoensis.NW_018485984.1_LOC110445078
+|                    |  |  |           |        |  +------|
+|                    |  |  |           |        |         +------------Myessoensis.NW_018485984.1_LOC110445099
+|                    |  |  |           |     +--|
+|                    |  |  |           |     |  +------------Myessoensis.NW_018485984.1_LOC110445103
+|                    |  |  |           |  +--|
+|                    |  |  |           |  |  |       +----Hsapiens.NP_0769191_homeobox_protein_HoxA6
+|                    |  |  |           |  |  |    +--|
+|                    |  |  |           |  |  |    |  +---Hsapiens.NP_0618252_homeobox_protein_HoxB6
+|                    |  |  |           |  |  +----|
+|                    |  |  |           |  |       +---------Hsapiens.NP_0044941_homeobox_protein_HoxC6_isoform
+|                    |  |  |           +--|
+|                    |  |  |              |        +--------Aplanci.LOC110974644_homeobox_protein_HB1like
+|                    |  |  |              |     +--|
+|                    |  |  |              |     |  |           +--Hsapiens.NP_0731491_homeobox_protein_HoxC8
+|                    |  |  |              |     |  |        +--|
+|                    |  |  |              |     |  |        |  +---Hsapiens.NP_0624581_homeobox_protein_HoxD8_isoform
+|                    |  |  |              |     |  +--------|
+|                    |  |  |              |     |           +--Hsapiens.NP_0769211_homeobox_protein_HoxB8
+|                    |  |  |              |  +--|
+|                    |  |  |              |  |  |   +------Hsapiens.NP_0044933_homeobox_protein_HoxB7
+|                    |  |  |              |  |  +---|
+|                    |  |  |              |  |      +--Hsapiens.NP_0088272_homeobox_protein_HoxA7
+|                    |  |  |              +--|
+|                    |  |  |                 +-----------Aplanci.LOC110974629_homeobox_protein_HoxA7like_is
+|                    |  +--|
+|                    |     |         +-----------Bbelcheri.LOC109475889_homeobox_protein_HoxC9alike
+|                    |     |      +--|
+|                    |     |      |  |        +-----------Bbelcheri.LOC109475772_homeobox_protein_HoxA10like
+|                    |     |      |  |     +--|
+|                    |     |      |  |     |  |  +--------Bbelcheri.LOC109475776_homeobox_protein_HoxD8like
+|                    |     |      |  |     |  +--|
+|                    |     |      |  |     |     +------------Bbelcheri.LOC109475780_homeobox_protein_HoxA9like
+|                    |     |      |  |  +--|
+|                    |     |      |  |  |  |                   +---Hsapiens.NP_0550271_homeobox_protein_HoxC11
+|                    |     |      |  |  |  |                +--|
+|                    |     |      |  |  |  |                |  +--Hsapiens.NP_0055141_homeobox_protein_HoxA11
+|                    |     |      |  |  |  +----------------|
+|                    |     |      |  |  |                   +--Hsapiens.NP_0670152_homeobox_protein_HoxD11
+|                    |     |      |  +--|
+|                    |     |      |     |     +--Hsapiens.NP_0618243_homeobox_protein_HoxA10
+|                    |     |      |     +-----|
+|                    |     |      |           |  +---Hsapiens.NP_0021392_homeobox_protein_HoxD10
+|                    |     |      |           +--|
+|                    |     |      |              +-----Hsapiens.NP_0591052_homeobox_protein_HoxC10
+|                    |     |   +--|
+|                    |     |   |  |  +---------Aplanci.LOC110974479_homeobox_protein_HoxC9alike
+|                    |     |   |  +--|
+|                    |     |   |     |      +----Hsapiens.NP_6899521_homeobox_protein_HoxA9
+|                    |     |   |     |   +--|
+|                    |     |   |     |   |  +----Hsapiens.NP_0550283_homeobox_protein_HoxD9
+|                    |     |   |     +---|
+|                    |     |   |         +---Hsapiens.NP_0769221_homeobox_protein_HoxB9
+|                    |     +---|
+|                    |         |   +------------Aplanci.LOC110974642_homeobox_protein_HoxA10like
+|                    |         +---|
+|                    |             |       +-------------Aplanci.LOC110974385_homeobox_protein_HoxC8like
+|                    |             +-------|
+|                    |                     +--------Aplanci.LOC110973135_homeobox_protein_HoxB7Alike_i
+|                 +--|
+|                 |  |          +------------Nvectensis.LOC116601518_homeobox_protein_HoxD3like
+|                 |  |     +----|
+|                 |  |     |    +----------------Dgigantea.LOC114532667_homeobox_protein_HoxB3like
+|                 |  |  +--|
+|                 |  |  |  |        +---------Bbelcheri.LOC109475823_homeobox_protein_HOX3
+|                 |  |  |  |     +--|
+|                 |  |  |  |     |  |       +---Hsapiens.NP_0013716781_homeobox_protein_HoxB3_isof
+|                 |  |  |  |     |  |    +--|
+|                 |  |  |  |     |  |    |  +---Hsapiens.NP_7058951_homeobox_protein_HoxA3
+|                 |  |  |  |     |  +----|
+|                 |  |  |  |     |       +--Hsapiens.NP_0088293_homeobox_protein_HoxD3
+|                 |  |  |  |  +--|
+|                 |  |  |  |  |  +----------Myessoensis.NW_018485984.1_LOC110445065
+|                 |  |  |  +--|
+|                 |  |  |     +------------Aplanci.LOC110974557_homeobox_protein_HoxA3alike
+|                 |  +--|
+|                 |     |           +-----------Nvectensis.LOC5514093_homeobox_protein_HoxA5
+|                 |     |     +-----|
+|                 |     |     |     |       +--Nvectensis.LOC5514048_homeobox_protein_HoxA6
+|                 |     |     |     +-------|
+|                 |     |     |             +-----Nvectensis.LOC5514094_homeobox_protein_HoxB6
+|                 |     |  +--|
+|                 |     |  |  +-------------Dgigantea.LOC114520820_homeobox_protein_HoxA4like
+|                 |     +--|
+|                 |        |          +-----------Bbelcheri.LOC109475826_homeobox_protein_HoxB2like
+|                 |        |       +--|
+|                 |        |       |  +---------------------Aplanci.LOC110974556_homeobox_protein_HoxC4like
+|                 |        |    +--|
+|                 |        |    |  |      +----Hsapiens.NP_0067261_homeobox_protein_HoxA2
+|                 |        |    |  +------|
+|                 |        |    |         +---Hsapiens.NP_0021361_homeobox_protein_HoxB2
+|                 |        +----|
+|                 |             +------Myessoensis.NW_018485984.1_LOC110445098
+|              +--|
+|              |  |  +-------------------------------------------Nvectensis.LOC5521840_homeobox_protein_abdominalA_
+|              |  +--|
+|              |     |              +--Nvectensis.LOC5517734_GS_homeobox_1
+|              |     |  +-----------|
+|              |     |  |           |  +--------Dgigantea.LOC114528570_homeobox_protein_HoxC6like
+|              |     |  |           +--|
+|              |     |  |              +----------Hvulgaris.LOC100215022_homeobox_protein_HoxC6alike
+|              |     +--|
+|              |        |         +-------------Bbelcheri.LOC109470584_uncharacterized_protein_LOC
+|              |        |      +--|
+|              |        |      |  |  +----Hsapiens.NP_5735742_GS_homeobox_2
+|              |        |      |  +--|
+|              |        |      |     +-----Hsapiens.NP_6636321_GS_homeobox_1
+|              |        |   +**|
+|              |        |   |  +------------Aplanci.LOC110988652_GS_homeobox_1like
+|              |        +---|
+|              |            +------------Myessoensis.NW_018406672.1_LOC110452406
+|           +--|
+|           |  |                 +------------Nvectensis.LOC5514380_homeobox_protein_unplugged
+|           |  |        +--------|
+|           |  |        |        |        +---Bbelcheri.LOC109462344_homeobox_protein_GBX2like
+|           |  |        |        |     +--|
+|           |  |        |        |     |  +--------Myessoensis.NW_018406762.1_LOC110452732
+|           |  |        |        |  +--|
+|           |  |        |        |  |  |  +----Hsapiens.NP_0010923041_homeobox_protein_GBX1
+|           |  |        |        |  |  +--|
+|           |  |        |        |  |     +----Hsapiens.NP_0014762_homeobox_protein_GBX2_isoform_
+|           |  |        |        +--|
+|           |  |        |           +-------Aplanci.LOC110977331_homeobox_protein_unpluggedlik
+|           |  |     +--|
+|           |  |     |  |               +---Nvectensis.LOC5514103_homeobox_protein_MSHC
+|           |  |     |  +---------------|
+|           |  |     |                  |  +---------Aplanci.LOC110976046_homeobox_protein_roughlike
+|           |  |     |                  +--|
+|           |  |     |                     +-----Dgigantea.LOC114519119_homeobox_protein_roughlike
+|           |  |  +--|
+|           |  |  |  |                    +-------Nvectensis.LOC5505085_homeobox_protein_MOX2
+|           |  |  |  |                 +--|
+|           |  |  |  |                 |  +--------Nvectensis.LOC5505088_homeobox_protein_HoxB4_isofo
+|           |  |  |  |              +--|
+|           |  |  |  |              |  +-------Dgigantea.LOC114527332_homeobox_protein_MOX2like
+|           |  |  |  |           +--|
+|           |  |  |  |           |  |  +-----Nvectensis.LOC5505086_homeobox_protein_MOX2_isofor
+|           |  |  |  |           |  +--|
+|           |  |  |  |           |     +---------------Nvectensis.LOC5505087_homeobox_protein_MOX2
+|           |  |  |  |        +--|
+|           |  |  |  |        |  +--------------------Hvulgaris.LOC100214554_homeobox_protein_pnxlike
+|           |  |  |  +--------|
+|           |  |  |           |        +--------Bbelcheri.LOC109475891_homeobox_protein_MOX1like
+|           |  |  |           |     +--|
+|           |  |  |           |     |  +--------Aplanci.LOC110988557_homeobox_protein_MOX1like
+|           |  |  |           |  +--|
+|           |  |  |           |  |  |    +-------Myessoensis.NW_018404831.1_LOC110446822
+|           |  |  |           |  |  +----|
+|           |  |  |           |  |       |     +**Myessoensis.NW_018404831.1_LOC110446812
+|           |  |  |           |  |       +-----|
+|           |  |  |           |  |             +**Myessoensis.NW_018484896.1_LOC110444607
+|           |  |  |           +--|
+|           |  |  |              |   +----------Hsapiens.NP_0045181_homeobox_protein_MOX1_isoform_
+|           |  |  |              +---|
+|           |  |  |                  +-----Hsapiens.NP_0059152_homeobox_protein_MOX2
+|           |  +--|
+|           |     |     +---------------------Nvectensis.LOC5514056_homeobox_protein_HoxB4a
+|           |     +-----|
+|           |           |             +-----Bbelcheri.LOC109481563_motor_neuron_and_pancreas_h
+|           |           |        +----|
+|           |           |        |    +----Bbelcheri.LOC109462363_motor_neuron_and_pancreas_h
+|           |           |     +--|
+|           |           |     |  +-------Myessoensis.NW_018480059.1_LOC110443067
+|           |           |  +--|
+|           |           |  |  +-------Aplanci.LOC110975976_motor_neuron_and_pancreas_hom
+|           |           +--|
+|           |              +------Hsapiens.NP_0055063_motor_neuron_and_pancreas_home
+|        +--|
+|        |  |             +---------Nvectensis.LOC5514051_homeobox_protein_HoxC5_isofo
+|        |  |      +------|
+|        |  |      |      |           +**Dgigantea.LOC114524538_homeobox_protein_HoxA7like
+|        |  |      |      +-----------|
+|        |  |      |                  +--Dgigantea.LOC114544209_homeobox_protein_HoxA7like
+|        |  |  +---|
+|        |  |  |   +-------------------------------------Hvulgaris.LOC100197809_homeobox_protein_HoxD10like
+|        |  +--|
+|        |     |            +--------Bbelcheri.LOC109475868_homeobox_protein_HoxA1like
+|        |     |        +---|
+|        |     |        |   +----Hsapiens.NP_0021352_homeobox_protein_HoxB1
+|        |     |     +--|
+|        |     |     |  +-----Hsapiens.NP_0055132_homeobox_protein_HoxA1_isoform
+|        |     |  +--|
+|        |     |  |  +-------------Hsapiens.NP_0787771_homeobox_protein_HoxD1
+|        |     +--|
+|        |        |  +---------------Aplanci.LOC110974647_homeobox_protein_HoxA1alike
+|        |        +--|
+|        |           +--------Myessoensis.NW_018485984.1_LOC110445101
+|     +--|
+|     |  |                         +--------Nvectensis.LOC116608936_homeobox_protein_HMX3Alike
+|     |  |                      +--|
+|     |  |                      |  +-------Myessoensis.NW_018407737.1_LOC110456657
+|     |  |                   +**|
+|     |  |                   |  +------Bbelcheri.LOC109462984_barHlike_2_homeobox_protein
+|     |  |        +----------|
+|     |  |        |          +-------Aplanci.LOC110973961_homeobox_protein_Nkx61like
+|     |  |     +--|
+|     |  |     |  |                          +--Bbelcheri.LOC109486788_homeobox_protein_vent1like
+|     |  |     |  |  +-----------------------|
+|     |  |     |  |  |                       +**Bbelcheri.LOC109486789_homeobox_protein_vent1like
+|     |  |     |  +--|
+|     |  |     |     |          +---Bbelcheri.LOC109462947_Tcell_leukemia_homeobox_pro
+|     |  |     |     +----------|
+|     |  |     |                |  +----Aplanci.LOC110973894_Tcell_leukemia_homeobox_prote
+|     |  |     |                +--|
+|     |  |     |                   |  +--Hsapiens.NP_0055121_Tcell_leukemia_homeobox_protei
+|     |  |     |                   +--|
+|     |  |     |                      +--Hsapiens.NP_0663052_Tcell_leukemia_homeobox_protei
+|     |  |  +--|
+|     |  |  |  |                  +----------Myessoensis.NW_018408625.1_LOC110461278
+|     |  |  |  |  +---------------|
+|     |  |  |  |  |               +------------Hsapiens.NP_0036492_homeobox_protein_BarHlike_2
+|     |  |  |  +--|
+|     |  |  |     +---------Hsapiens.NP_0644481_barHlike_1_homeobox_protein
+|     |  +--|
+|     |     +--------------------Bbelcheri.LOC109464825_Tcell_leukemia_homeobox_pro
+|  +--|
+|  |  +---------------------------Bbelcheri.LOC109479273_homeobox_protein_engrailed1
++--|
+|  |  +---------Dgigantea.LOC114520258_homeobox_protein_Hmxlike
+|  +--|
+|     +--------------Dgigantea.LOC114520241_homeobox_protein_pnxlike
+|
+|  +--------Nvectensis.LOC116611509_homeobox_protein_MSX2like
++--|
+   |            +------Bbelcheri.LOC109479268_homeobox_protein_ceh30like
+   +------------|
+                +-----Bbelcheri.LOC109479269_homeobox_protein_vab15like
+
+Tree in newick format:
+
+(Nvectensis.LOC5518689_homeobox_protein_engrailedli:1.5934589018,(((((((((((Nvectensis.LOC5521839_homeobox_protein_HoxB7A:1.2459843369,(Dgigantea.LOC114532759_homeobox_protein_HoxA9like:0.9183725880,(Dgigantea.LOC114524627_homeobox_protein_HoxB5blike:0.0000024069,Dgigantea.LOC114544210_homeobox_protein_HoxB5blike:0.0057484462):1.7200108447):0.0826575749):1.1355983292,(((Nvectensis.LOC5521423_homeobox_protein_HoxC4:1.1381813751,Dgigantea.LOC114516149_pancreasduodenum_homeobox_p:0.9813933859):0.4269277774,(Hvulgaris.LOC105850935_homeobox_protein_mab5like:0.0401190614,Hvulgaris.LOC100201084_homeobox_protein_mab5:0.2598584983):2.0603198129):0.2625077141,Hvulgaris.LOC100213602_homeobox_protein_HoxC6:3.8684562051):0.1086830117):0.3214039095,((Nvectensis.LOC5517717_homeobox_protein_HoxB3a:2.2336817486,(((Bbelcheri.LOC109470583_pancreasduodenum_homeobox_p:0.4190572945,Myessoensis.NW_018406672.1_LOC110452400:0.7784867569):0.3578367026,Hsapiens.NP_0002001_pancreasduodenum_homeobox_prot:1.2520549383):0.0672661638,Aplanci.LOC110988620_pancreasduodenum_homeobox_pro:0.8095264992):0.4744107345):0.4891122162,(Myessoensis.NW_018406672.1_LOC110452409:1.7867329232,(Hsapiens.NP_0012564_homeobox_protein_CDX2_isoform_:0.9251623938,Hsapiens.NP_0017952_homeobox_protein_CDX1:0.2521978556):0.3243640980):1.5143118331):0.0510136922):0.1084651313,(((((Bbelcheri.LOC109475825_homeobox_protein_HoxB4alike:0.3669313089,Aplanci.LOC110974660_homeobox_protein_HoxB4like:1.2737089348):0.2789215504,((Hsapiens.NP_0021323_homeobox_protein_HoxA4:0.6844003296,(Hsapiens.NP_7058971_homeobox_protein_HoxC4:0.4505778832,Hsapiens.NP_0769201_homeobox_protein_HoxB4:0.4087235999):0.1363398227):0.1058462835,Hsapiens.NP_0554362_homeobox_protein_HoxD4:0.4214726719):0.1658883009):0.1885453308,Myessoensis.NW_018485984.1_LOC110445094:0.7438524933):0.5172003027,(((Bbelcheri.LOC109475859_homeobox_protein_HoxB5like:0.8819247821,((Hsapiens.NP_0619752_homeobox_protein_HoxA5:0.3000444315,Hsapiens.NP_0021381_homeobox_protein_HoxB5:0.3387193592):0.1060466118,Hsapiens.NP_0618261_homeobox_protein_HoxC5:1.1673041635):0.3923840885):0.2410423518,(Aplanci.LOC110974633_homeobox_protein_HoxA5like:0.9017691867,Myessoensis.NW_018485984.1_LOC110445095:1.1324957473):0.2692082975):0.1901119407,((Bbelcheri.LOC109475861_homeobox_protein_HoxB6like:0.9385097770,Myessoensis.NW_018485984.1_LOC110445080:1.5139155671):0.4244776461,(Bbelcheri.LOC109475860_homeobox_protein_HoxA7like:0.7927682540,((((Bbelcheri.LOC109475781_homeobox_protein_HoxD8like:1.1457292962,(Myessoensis.NW_018485984.1_LOC110445078:0.6478575151,Myessoensis.NW_018485984.1_LOC110445099:1.3402825164):0.7518375069):0.3018758152,Myessoensis.NW_018485984.1_LOC110445103:1.3445330394):0.1265018224,((Hsapiens.NP_0769191_homeobox_protein_HoxA6:0.5644092925,Hsapiens.NP_0618252_homeobox_protein_HoxB6:0.5017796766):0.2891159733,Hsapiens.NP_0044941_homeobox_protein_HoxC6_isoform:1.0340161852):0.5704095767):0.1112088509,(((Aplanci.LOC110974644_homeobox_protein_HB1like:1.0288164532,((Hsapiens.NP_0731491_homeobox_protein_HoxC8:0.3309070437,Hsapiens.NP_0624581_homeobox_protein_HoxD8_isoform:0.4227475338):0.2000971323,Hsapiens.NP_0769211_homeobox_protein_HoxB8:0.2054724511):1.0102833503):0.1668665877,(Hsapiens.NP_0044933_homeobox_protein_HoxB7:0.7343265166,Hsapiens.NP_0088272_homeobox_protein_HoxA7:0.3842796894):0.4226098173):0.1438464388,Aplanci.LOC110974629_homeobox_protein_HoxA7like_is:1.3315313798):0.0681578836):0.1131149497):0.0115654999):0.2405076311):0.1188871663):0.2361829795,(((Bbelcheri.LOC109475889_homeobox_protein_HoxC9alike:1.2547871374,(((Bbelcheri.LOC109475772_homeobox_protein_HoxA10like:1.2372396954,(Bbelcheri.LOC109475776_homeobox_protein_HoxD8like:0.9727295065,Bbelcheri.LOC109475780_homeobox_protein_HoxA9like:1.3745169021):0.3395718087):0.1783469933,((Hsapiens.NP_0550271_homeobox_protein_HoxC11:0.4895174340,Hsapiens.NP_0055141_homeobox_protein_HoxA11:0.3873101836):0.1846206165,Hsapiens.NP_0670152_homeobox_protein_HoxD11:0.3724264860):1.8001247662):0.0908970952,(Hsapiens.NP_0618243_homeobox_protein_HoxA10:0.3764674173,(Hsapiens.NP_0021392_homeobox_protein_HoxD10:0.4422622489,Hsapiens.NP_0591052_homeobox_protein_HoxC10:0.7201566532):0.3452932082):0.6865186774):0.0790838463):0.1346101679,(Aplanci.LOC110974479_homeobox_protein_HoxC9alike:1.1247703941,((Hsapiens.NP_6899521_homeobox_protein_HoxA9:0.6144075693,Hsapiens.NP_0550283_homeobox_protein_HoxD9:0.5512838728):0.1455862092,Hsapiens.NP_0769221_homeobox_protein_HoxB9:0.4277684194):0.4621285687):0.2149718241):0.0920180571,(Aplanci.LOC110974642_homeobox_protein_HoxA10like:1.3615158995,(Aplanci.LOC110974385_homeobox_protein_HoxC8like:1.4711333553,Aplanci.LOC110973135_homeobox_protein_HoxB7Alike_i:0.9621234401):0.8780037121):0.5070833103):0.4573111205):0.1035399916):0.0550086375,(((Nvectensis.LOC116601518_homeobox_protein_HoxD3like:1.3586769616,Dgigantea.LOC114532667_homeobox_protein_HoxB3like:1.7797608335):0.5624689323,(((Bbelcheri.LOC109475823_homeobox_protein_HOX3:1.0644580895,((Hsapiens.NP_0013716781_homeobox_protein_HoxB3_isof:0.4158608252,Hsapiens.NP_7058951_homeobox_protein_HoxA3:0.4423226735):0.0976852944,Hsapiens.NP_0088293_homeobox_protein_HoxD3:0.3625843016):0.6071411422):0.2785937742,Myessoensis.NW_018485984.1_LOC110445065:1.1749237332):0.1523859560,Aplanci.LOC110974557_homeobox_protein_HoxA3alike:1.4049737642):0.1689149294):0.1619448526,(((Nvectensis.LOC5514093_homeobox_protein_HoxA5:1.2430791767,(Nvectensis.LOC5514048_homeobox_protein_HoxA6:0.2769340964,Nvectensis.LOC5514094_homeobox_protein_HoxB6:0.7001194386):0.8749115148):0.6499911071,Dgigantea.LOC114520820_homeobox_protein_HoxA4like:1.4799400518):0.2374966790,(((Bbelcheri.LOC109475826_homeobox_protein_HoxB2like:1.2982618374,Aplanci.LOC110974556_homeobox_protein_HoxC4like:2.3630944078):0.3960112907,(Hsapiens.NP_0067261_homeobox_protein_HoxA2:0.5385684138,Hsapiens.NP_0021361_homeobox_protein_HoxB2:0.4270183894):0.7641329676):0.1286143501,Myessoensis.NW_018485984.1_LOC110445098:0.7526581233):0.5957515478):0.1278496404):0.1573781465):0.0652547522,(Nvectensis.LOC5521840_homeobox_protein_abdominalA_:4.5481978405,((Nvectensis.LOC5517734_GS_homeobox_1:0.2074450033,(Dgigantea.LOC114528570_homeobox_protein_HoxC6like:1.0244060524,Hvulgaris.LOC100215022_homeobox_protein_HoxC6alike:1.1908585011):0.3946009545):1.2400345347,(((Bbelcheri.LOC109470584_uncharacterized_protein_LOC:1.5236608947,(Hsapiens.NP_5735742_GS_homeobox_2:0.5487271989,Hsapiens.NP_6636321_GS_homeobox_1:0.6444306054):0.1554577099):0.1283327474,Aplanci.LOC110988652_GS_homeobox_1like:1.3560234541):0.0000029875,Myessoensis.NW_018406672.1_LOC110452406:1.4031102201):0.4946804393):0.2731531989):0.2430952861):0.0650323692,((((Nvectensis.LOC5514380_homeobox_protein_unplugged:1.3735213610,(((Bbelcheri.LOC109462344_homeobox_protein_GBX2like:0.4875189332,Myessoensis.NW_018406762.1_LOC110452732:0.9884350346):0.1497569666,(Hsapiens.NP_0010923041_homeobox_protein_GBX1:0.5309938214,Hsapiens.NP_0014762_homeobox_protein_GBX2_isoform_:0.5213086086):0.2569103931):0.3713874522,Aplanci.LOC110977331_homeobox_protein_unpluggedlik:0.8601919843):0.2529986432):0.9639368780,(Nvectensis.LOC5514103_homeobox_protein_MSHC:0.4818051433,(Aplanci.LOC110976046_homeobox_protein_roughlike:1.0879302866,Dgigantea.LOC114519119_homeobox_protein_roughlike:0.6694942838):0.2250760756):1.7020290593):0.1456873660,(((((Nvectensis.LOC5505085_homeobox_protein_MOX2:0.8963823795,Nvectensis.LOC5505088_homeobox_protein_HoxB4_isofo:0.9375335013):0.2192089561,Dgigantea.LOC114527332_homeobox_protein_MOX2like:0.8452197069):0.2454817073,(Nvectensis.LOC5505086_homeobox_protein_MOX2_isofor:0.6441710793,Nvectensis.LOC5505087_homeobox_protein_MOX2:1.6898836126):0.2903920384):0.3484990427,Hvulgaris.LOC100214554_homeobox_protein_pnxlike:2.1748889226):0.1140763074,(((Bbelcheri.LOC109475891_homeobox_protein_MOX1like:0.9893735311,Aplanci.LOC110988557_homeobox_protein_MOX1like:0.9345773082):0.1713567796,(Myessoensis.NW_018404831.1_LOC110446822:0.8974502224,(Myessoensis.NW_018404831.1_LOC110446812:0.0000024875,Myessoensis.NW_018484896.1_LOC110444607:0.0000012094):0.6449140684):0.5314705112):0.1681730690,(Hsapiens.NP_0045181_homeobox_protein_MOX1_isoform_:1.2285147097,Hsapiens.NP_0059152_homeobox_protein_MOX2:0.6507656488):0.4954984610):0.2431387322):1.0006109915):0.0944743331,(Nvectensis.LOC5514056_homeobox_protein_HoxB4a:2.3450898706,((((Bbelcheri.LOC109481563_motor_neuron_and_pancreas_h:0.7121678380,Bbelcheri.LOC109462363_motor_neuron_and_pancreas_h:0.5868042681):0.5484884383,Myessoensis.NW_018480059.1_LOC110443067:0.8943301295):0.0556259386,Aplanci.LOC110975976_motor_neuron_and_pancreas_hom:0.8399370181):0.1166199604,Hsapiens.NP_0055063_motor_neuron_and_pancreas_home:0.7414247174):0.2460366895):0.6634336878):0.1374572969):0.0961007380,(((Nvectensis.LOC5514051_homeobox_protein_HoxC5_isofo:1.0462239718,(Dgigantea.LOC114524538_homeobox_protein_HoxA7like:0.0000032458,Dgigantea.LOC114544209_homeobox_protein_HoxA7like:0.0038278447):1.2658727511):0.8046569233,Hvulgaris.LOC100197809_homeobox_protein_HoxD10like:4.0102910703):0.4880586121,((((Bbelcheri.LOC109475868_homeobox_protein_HoxA1like:0.9734843301,Hsapiens.NP_0021352_homeobox_protein_HoxB1:0.5467835693):0.4362290507,Hsapiens.NP_0055132_homeobox_protein_HoxA1_isoform:0.6929470505):0.2303644935,Hsapiens.NP_0787771_homeobox_protein_HoxD1:1.4638583476):0.2508909861,(Aplanci.LOC110974647_homeobox_protein_HoxA1alike:1.7423626715,Myessoensis.NW_018485984.1_LOC110445101:1.0002411665):0.2901959089):0.4108002933):0.1689620141):0.2817274230,((((((Nvectensis.LOC116608936_homeobox_protein_HMX3Alike:0.9304060613,Myessoensis.NW_018407737.1_LOC110456657:0.8632523699):0.3001080907,Bbelcheri.LOC109462984_barHlike_2_homeobox_protein:0.7372984861):0.0000026656,Aplanci.LOC110973961_homeobox_protein_Nkx61like:0.9064750328):1.1784548827,((Bbelcheri.LOC109486788_homeobox_protein_vent1like:0.0249496294,Bbelcheri.LOC109486789_homeobox_protein_vent1like:0.0000033292):2.5691289860,(Bbelcheri.LOC109462947_Tcell_leukemia_homeobox_pro:0.4550035893,(Aplanci.LOC110973894_Tcell_leukemia_homeobox_prote:0.5946049105,(Hsapiens.NP_0055121_Tcell_leukemia_homeobox_protei:0.3094625484,Hsapiens.NP_0663052_Tcell_leukemia_homeobox_protei:0.2674610166):0.1872148549):0.0873490583):1.1843779215):0.1462309207):0.1424584172,((Myessoensis.NW_018408625.1_LOC110461278:1.1930878370,Hsapiens.NP_0036492_homeobox_protein_BarHlike_2:1.3389233126):1.7479172892,Hsapiens.NP_0644481_barHlike_1_homeobox_protein:1.0531603841):0.3149681431):0.1446578825,Bbelcheri.LOC109464825_Tcell_leukemia_homeobox_pro:2.2151738456):0.1519589788):0.3856004911,Bbelcheri.LOC109479273_homeobox_protein_engrailed1:2.9663707789):0.3316664916,(Dgigantea.LOC114520258_homeobox_protein_Hmxlike:1.1067213650,Dgigantea.LOC114520241_homeobox_protein_pnxlike:1.5901546200):0.2557251784):0.2280877216,(Nvectensis.LOC116611509_homeobox_protein_MSX2like:0.9951462054,(Bbelcheri.LOC109479268_homeobox_protein_ceh30like:0.8171864386,Bbelcheri.LOC109479269_homeobox_protein_vab15like:0.6459460542):1.3625639043):0.0651500756);
+
+TIME STAMP
+----------
+
+Date and time: Wed Jun  1 05:58:38 2022
+Total CPU time used: 25045.8 seconds (6h:57m:25s)
+Total wall-clock time used: 1808.19 seconds (0h:30m:8s)
+

@@ -1,0 +1,468 @@
+IQ-TREE multicore version 2.0.6 for Linux 64-bit built Jul 10 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    cn079 (AVX2, FMA3, 125 GB RAM)
+Command: iqtree2 -s hox.homologs.al.fas -nt AUTO
+Seed:    448577 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Jun  1 04:26:46 2022
+Kernel:  AVX+FMA - auto-detect threads (24 CPU cores detected)
+
+Reading alignment file hox.homologs.al.fas ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 149 sequences with 1761 columns, 1472 distinct patterns
+731 parsimony-informative, 526 singleton sites, 504 constant sites
+                                                    Gap/Ambiguity  Composition  p-value
+   1  Nvectensis.LOC5518689_homeobox_protein_engrailedli   85.63%    failed      0.03%
+   2  Nvectensis.LOC5521839_homeobox_protein_HoxB7A        86.20%    passed     27.53%
+   3  Nvectensis.LOC5521840_homeobox_protein_abdominalA_   89.49%    failed      0.82%
+   4  Nvectensis.LOC5517717_homeobox_protein_HoxB3a        87.68%    failed      2.80%
+   5  Nvectensis.LOC5517734_GS_homeobox_1                  88.13%    passed     14.41%
+   6  Nvectensis.LOC5514380_homeobox_protein_unplugged     87.05%    failed      2.95%
+   7  Nvectensis.LOC116601518_homeobox_protein_HoxD3like   88.25%    passed     23.88%
+   8  Nvectensis.LOC5505085_homeobox_protein_MOX2          86.26%    failed      0.37%
+   9  Nvectensis.LOC5505086_homeobox_protein_MOX2_isofor   87.05%    passed     26.77%
+  10  Nvectensis.LOC5505087_homeobox_protein_MOX2          88.76%    passed     30.29%
+  11  Nvectensis.LOC5505088_homeobox_protein_HoxB4_isofo   88.02%    passed     30.67%
+  12  Nvectensis.LOC116611509_homeobox_protein_MSX2like    86.83%    passed     91.49%
+  13  Nvectensis.LOC5514093_homeobox_protein_HoxA5         86.88%    passed     25.51%
+  14  Nvectensis.LOC5514048_homeobox_protein_HoxA6         88.07%    passed     12.82%
+  15  Nvectensis.LOC5514094_homeobox_protein_HoxB6         89.49%    failed      2.05%
+  16  Nvectensis.LOC5514051_homeobox_protein_HoxC5_isofo   85.24%    passed      8.13%
+  17  Nvectensis.LOC5514056_homeobox_protein_HoxB4a        89.44%    passed     85.66%
+  18  Nvectensis.LOC5514103_homeobox_protein_MSHC          87.22%    passed      9.58%
+  19  Nvectensis.LOC116608936_homeobox_protein_HMX3Alike   87.39%    failed      0.00%
+  20  Nvectensis.LOC5521423_homeobox_protein_HoxC4         85.52%    failed      0.02%
+  21  Bbelcheri.LOC109479268_homeobox_protein_ceh30like    83.82%    passed      6.14%
+  22  Bbelcheri.LOC109479269_homeobox_protein_vab15like    83.87%    passed     49.33%
+  23  Bbelcheri.LOC109479273_homeobox_protein_engrailed1   85.58%    failed      3.90%
+  24  Bbelcheri.LOC109475891_homeobox_protein_MOX1like     80.58%    passed      9.96%
+  25  Bbelcheri.LOC109475868_homeobox_protein_HoxA1like    83.65%    failed      0.09%
+  26  Bbelcheri.LOC109475826_homeobox_protein_HoxB2like    88.42%    passed     19.42%
+  27  Bbelcheri.LOC109475823_homeobox_protein_HOX3         75.35%    failed      0.00%
+  28  Bbelcheri.LOC109475825_homeobox_protein_HoxB4alike   84.16%    failed      0.23%
+  29  Bbelcheri.LOC109475859_homeobox_protein_HoxB5like    78.48%    failed      0.01%
+  30  Bbelcheri.LOC109475861_homeobox_protein_HoxB6like    87.11%    passed     83.98%
+  31  Bbelcheri.LOC109475860_homeobox_protein_HoxA7like    86.60%    passed     35.70%
+  32  Bbelcheri.LOC109475781_homeobox_protein_HoxD8like    87.96%    passed     53.89%
+  33  Bbelcheri.LOC109475889_homeobox_protein_HoxC9alike   82.68%    passed     22.72%
+  34  Bbelcheri.LOC109475772_homeobox_protein_HoxA10like   81.49%    passed     62.34%
+  35  Bbelcheri.LOC109475776_homeobox_protein_HoxD8like    83.65%    failed      2.79%
+  36  Bbelcheri.LOC109475780_homeobox_protein_HoxA9like    89.61%    passed     79.64%
+  37  Bbelcheri.LOC109481563_motor_neuron_and_pancreas_h   87.68%    passed     52.75%
+  38  Bbelcheri.LOC109464825_Tcell_leukemia_homeobox_pro   85.12%    passed     24.67%
+  39  Bbelcheri.LOC109462363_motor_neuron_and_pancreas_h   83.13%    failed      2.65%
+  40  Bbelcheri.LOC109462344_homeobox_protein_GBX2like     82.51%    failed      2.94%
+  41  Bbelcheri.LOC109470583_pancreasduodenum_homeobox_p   87.79%    passed     30.37%
+  42  Bbelcheri.LOC109470584_uncharacterized_protein_LOC   64.40%    failed      0.00%
+  43  Bbelcheri.LOC109486788_homeobox_protein_vent1like    80.64%    failed      0.06%
+  44  Bbelcheri.LOC109486789_homeobox_protein_vent1like    80.64%    failed      0.03%
+  45  Bbelcheri.LOC109462984_barHlike_2_homeobox_protein   81.20%    failed      0.00%
+  46  Bbelcheri.LOC109462947_Tcell_leukemia_homeobox_pro   82.51%    passed     17.99%
+  47  Aplanci.LOC110988620_pancreasduodenum_homeobox_pro   78.99%    passed     63.14%
+  48  Aplanci.LOC110988652_GS_homeobox_1like               84.16%    failed      0.07%
+  49  Aplanci.LOC110974647_homeobox_protein_HoxA1alike     78.93%    failed      0.08%
+  50  Aplanci.LOC110974556_homeobox_protein_HoxC4like      77.57%    passed     18.34%
+  51  Aplanci.LOC110974557_homeobox_protein_HoxA3alike     81.60%    passed      5.58%
+  52  Aplanci.LOC110974660_homeobox_protein_HoxB4like      84.84%    passed     88.84%
+  53  Aplanci.LOC110974633_homeobox_protein_HoxA5like      85.58%    failed      0.29%
+  54  Aplanci.LOC110974644_homeobox_protein_HB1like        84.27%    failed      3.65%
+  55  Aplanci.LOC110974629_homeobox_protein_HoxA7like_is   79.44%    passed     15.23%
+  56  Aplanci.LOC110974479_homeobox_protein_HoxC9alike     80.86%    failed      1.54%
+  57  Aplanci.LOC110974642_homeobox_protein_HoxA10like     82.68%    failed      0.04%
+  58  Aplanci.LOC110974385_homeobox_protein_HoxC8like      85.01%    passed      6.06%
+  59  Aplanci.LOC110973894_Tcell_leukemia_homeobox_prote   82.40%    failed      3.52%
+  60  Aplanci.LOC110973961_homeobox_protein_Nkx61like      72.80%    failed      0.00%
+  61  Aplanci.LOC110976046_homeobox_protein_roughlike      91.88%    failed      2.53%
+  62  Aplanci.LOC110975976_motor_neuron_and_pancreas_hom   78.08%    failed      0.11%
+  63  Aplanci.LOC110973135_homeobox_protein_HoxB7Alike_i   82.23%    passed     14.38%
+  64  Aplanci.LOC110988557_homeobox_protein_MOX1like       82.00%    failed      0.51%
+  65  Aplanci.LOC110977331_homeobox_protein_unpluggedlik   80.24%    failed      3.25%
+  66  Myessoensis.NW_018480059.1_LOC110443067              79.73%    failed      0.01%
+  67  Myessoensis.NW_018408625.1_LOC110461278              85.07%    passed      8.31%
+  68  Myessoensis.NW_018407737.1_LOC110456657              80.58%    failed      0.00%
+  69  Myessoensis.NW_018485984.1_LOC110445101              82.74%    failed      0.41%
+  70  Myessoensis.NW_018485984.1_LOC110445098              56.10%    failed      0.00%
+  71  Myessoensis.NW_018485984.1_LOC110445065              71.78%    failed      0.00%
+  72  Myessoensis.NW_018485984.1_LOC110445094              85.12%    passed      8.87%
+  73  Myessoensis.NW_018485984.1_LOC110445095              84.04%    passed      6.02%
+  74  Myessoensis.NW_018485984.1_LOC110445080              83.02%    failed      1.12%
+  75  Myessoensis.NW_018485984.1_LOC110445103              85.69%    failed      4.89%
+  76  Myessoensis.NW_018485984.1_LOC110445078              82.23%    failed      0.42%
+  77  Myessoensis.NW_018485984.1_LOC110445099              85.18%    passed     11.28%
+  78  Myessoensis.NW_018404831.1_LOC110446822              83.13%    passed      7.21%
+  79  Myessoensis.NW_018404831.1_LOC110446812              83.82%    passed      6.16%
+  80  Myessoensis.NW_018406672.1_LOC110452406              78.99%    failed      0.02%
+  81  Myessoensis.NW_018406672.1_LOC110452400              82.11%    passed      5.81%
+  82  Myessoensis.NW_018406672.1_LOC110452409              81.49%    failed      0.09%
+  83  Myessoensis.NW_018484896.1_LOC110444607              93.36%    failed      4.51%
+  84  Myessoensis.NW_018406762.1_LOC110452732              81.77%    passed      8.91%
+  85  Dgigantea.LOC114516149_pancreasduodenum_homeobox_p   84.78%    passed      6.94%
+  86  Dgigantea.LOC114527332_homeobox_protein_MOX2like     86.54%    passed     17.45%
+  87  Dgigantea.LOC114520258_homeobox_protein_Hmxlike      88.81%    passed     21.21%
+  88  Dgigantea.LOC114520241_homeobox_protein_pnxlike      87.68%    failed      1.92%
+  89  Dgigantea.LOC114519119_homeobox_protein_roughlike    86.77%    failed      4.55%
+  90  Dgigantea.LOC114532759_homeobox_protein_HoxA9like    88.70%    passed     23.29%
+  91  Dgigantea.LOC114532667_homeobox_protein_HoxB3like    87.22%    failed      0.61%
+  92  Dgigantea.LOC114520820_homeobox_protein_HoxA4like    91.77%    failed      2.33%
+  93  Dgigantea.LOC114524627_homeobox_protein_HoxB5blike   88.36%    failed      0.32%
+  94  Dgigantea.LOC114524538_homeobox_protein_HoxA7like    84.10%    failed      0.01%
+  95  Dgigantea.LOC114544209_homeobox_protein_HoxA7like    84.95%    failed      0.01%
+  96  Dgigantea.LOC114544210_homeobox_protein_HoxB5blike   88.36%    failed      0.41%
+  97  Dgigantea.LOC114528570_homeobox_protein_HoxC6like    88.02%    passed     24.12%
+  98  Hvulgaris.LOC100215022_homeobox_protein_HoxC6alike   85.52%    failed      3.83%
+  99  Hvulgaris.LOC100213602_homeobox_protein_HoxC6        83.82%    failed      1.51%
+ 100  Hvulgaris.LOC105850935_homeobox_protein_mab5like     85.86%    failed      0.24%
+ 101  Hvulgaris.LOC100214554_homeobox_protein_pnxlike      85.92%    failed      0.02%
+ 102  Hvulgaris.LOC100201084_homeobox_protein_mab5         85.80%    failed      2.74%
+ 103  Hvulgaris.LOC100197809_homeobox_protein_HoxD10like   85.12%    failed      0.00%
+ 104  Hsapiens.NP_0055132_homeobox_protein_HoxA1_isoform   80.98%    failed      4.89%
+ 105  Hsapiens.NP_0731491_homeobox_protein_HoxC8           86.26%    passed      7.13%
+ 106  Hsapiens.NP_0067261_homeobox_protein_HoxA2           78.65%    failed      1.04%
+ 107  Hsapiens.NP_6899521_homeobox_protein_HoxA9           84.55%    passed     20.16%
+ 108  Hsapiens.NP_0769211_homeobox_protein_HoxB8           86.20%    passed     15.29%
+ 109  Hsapiens.NP_0021361_homeobox_protein_HoxB2           79.78%    failed      0.00%
+ 110  Hsapiens.NP_0550283_homeobox_protein_HoxD9           80.01%    failed      0.00%
+ 111  Hsapiens.NP_0013716781_homeobox_protein_HoxB3_isof   75.53%    failed      0.00%
+ 112  Hsapiens.NP_0618243_homeobox_protein_HoxA10          76.72%    failed      0.00%
+ 113  Hsapiens.NP_0055063_motor_neuron_and_pancreas_home   77.23%    failed      0.00%
+ 114  Hsapiens.NP_0619752_homeobox_protein_HoxA5           84.67%    failed      0.74%
+ 115  Hsapiens.NP_0769221_homeobox_protein_HoxB9           85.80%    passed     46.47%
+ 116  Hsapiens.NP_0002001_pancreasduodenum_homeobox_prot   83.93%    failed      0.00%
+ 117  Hsapiens.NP_0012564_homeobox_protein_CDX2_isoform_   82.23%    failed      0.00%
+ 118  Hsapiens.NP_0769191_homeobox_protein_HoxA6           86.77%    passed     29.24%
+ 119  Hsapiens.NP_0044941_homeobox_protein_HoxC6_isoform   86.66%    passed     39.78%
+ 120  Hsapiens.NP_0021381_homeobox_protein_HoxB5           84.72%    failed      0.48%
+ 121  Hsapiens.NP_0618252_homeobox_protein_HoxB6           87.28%    passed     22.01%
+ 122  Hsapiens.NP_0055121_Tcell_leukemia_homeobox_protei   81.26%    failed      0.00%
+ 123  Hsapiens.NP_0550271_homeobox_protein_HoxC11          82.74%    passed      6.58%
+ 124  Hsapiens.NP_0044933_homeobox_protein_HoxB7           87.68%    failed      4.14%
+ 125  Hsapiens.NP_0055141_homeobox_protein_HoxA11          82.23%    passed     19.05%
+ 126  Hsapiens.NP_0010923041_homeobox_protein_GBX1         79.39%    failed      0.00%
+ 127  Hsapiens.NP_0618261_homeobox_protein_HoxC5           87.39%    passed     60.39%
+ 128  Hsapiens.NP_7058951_homeobox_protein_HoxA3           74.84%    failed      0.00%
+ 129  Hsapiens.NP_0021392_homeobox_protein_HoxD10          80.69%    failed      0.55%
+ 130  Hsapiens.NP_0088293_homeobox_protein_HoxD3           75.47%    failed      0.00%
+ 131  Hsapiens.NP_5735742_GS_homeobox_2                    82.74%    failed      0.01%
+ 132  Hsapiens.NP_0021323_homeobox_protein_HoxA4           81.83%    failed      0.00%
+ 133  Hsapiens.NP_0017952_homeobox_protein_CDX1            84.95%    failed      0.00%
+ 134  Hsapiens.NP_0663052_Tcell_leukemia_homeobox_protei   83.48%    failed      0.88%
+ 135  Hsapiens.NP_0014762_homeobox_protein_GBX2_isoform_   80.24%    failed      0.12%
+ 136  Hsapiens.NP_6636321_GS_homeobox_1                    85.01%    failed      0.17%
+ 137  Hsapiens.NP_0088272_homeobox_protein_HoxA7           86.94%    failed      0.81%
+ 138  Hsapiens.NP_7058971_homeobox_protein_HoxC4           85.01%    failed      3.73%
+ 139  Hsapiens.NP_0591052_homeobox_protein_HoxC10          80.58%    failed      2.36%
+ 140  Hsapiens.NP_0021352_homeobox_protein_HoxB1           82.91%    failed      0.06%
+ 141  Hsapiens.NP_0670152_homeobox_protein_HoxD11          80.81%    failed      0.00%
+ 142  Hsapiens.NP_0554362_homeobox_protein_HoxD4           85.52%    passed     13.64%
+ 143  Hsapiens.NP_0624581_homeobox_protein_HoxD8_isoform   83.53%    failed      0.34%
+ 144  Hsapiens.NP_0644481_barHlike_1_homeobox_protein      81.43%    failed      0.00%
+ 145  Hsapiens.NP_0769201_homeobox_protein_HoxB4           85.75%    failed      0.00%
+ 146  Hsapiens.NP_0036492_homeobox_protein_BarHlike_2      84.16%    failed      0.01%
+ 147  Hsapiens.NP_0045181_homeobox_protein_MOX1_isoform_   85.58%    passed     56.73%
+ 148  Hsapiens.NP_0059152_homeobox_protein_MOX2            82.74%    failed      0.00%
+ 149  Hsapiens.NP_0787771_homeobox_protein_HoxD1           81.37%    failed      0.00%
+WARNING: 149 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                83.62%  91 sequences failed composition chi2 test (p-value<5%; df=19)
+
+NOTE: Restoring information from model checkpoint file hox.homologs.al.fas.model.gz
+
+CHECKPOINT: Initial tree restored
+Measuring multi-threading efficiency up to 24 CPU cores
+Increase to 10 rounds for branch lengths
+4 trees examined
+Threads: 1 / Time: 28.690 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -101389
+Threads: 2 / Time: 15.688 sec / Speedup: 1.829 / Efficiency: 91% / LogL: -101389
+Threads: 3 / Time: 13.466 sec / Speedup: 2.130 / Efficiency: 71% / LogL: -101389
+Threads: 4 / Time: 8.282 sec / Speedup: 3.464 / Efficiency: 87% / LogL: -101389
+Threads: 5 / Time: 8.311 sec / Speedup: 3.452 / Efficiency: 69% / LogL: -101389
+Threads: 6 / Time: 6.087 sec / Speedup: 4.713 / Efficiency: 79% / LogL: -101389
+Threads: 7 / Time: 5.780 sec / Speedup: 4.964 / Efficiency: 71% / LogL: -101389
+Threads: 8 / Time: 5.127 sec / Speedup: 5.596 / Efficiency: 70% / LogL: -101389
+Threads: 9 / Time: 4.989 sec / Speedup: 5.751 / Efficiency: 64% / LogL: -101389
+Threads: 10 / Time: 4.040 sec / Speedup: 7.101 / Efficiency: 71% / LogL: -101389
+Threads: 11 / Time: 4.398 sec / Speedup: 6.523 / Efficiency: 59% / LogL: -101389
+Threads: 12 / Time: 3.586 sec / Speedup: 8.001 / Efficiency: 67% / LogL: -101389
+Threads: 13 / Time: 3.654 sec / Speedup: 7.851 / Efficiency: 60% / LogL: -101389
+Threads: 14 / Time: 3.328 sec / Speedup: 8.620 / Efficiency: 62% / LogL: -101389
+Threads: 15 / Time: 3.734 sec / Speedup: 7.683 / Efficiency: 51% / LogL: -101389
+BEST NUMBER OF THREADS: 14
+
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -90773.173
+2. Current log-likelihood: -90771.302
+Optimal log-likelihood: -90770.537
+Proportion of invariable sites: 0.006
+Gamma shape alpha: 0.777
+Parameters optimization took 2 rounds (0.739 sec)
+Time for fast ML tree search: 6.295 seconds
+
+NOTE: ModelFinder requires 343 MB RAM!
+ModelFinder will test up to 546 protein models (sample size: 1761) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            96251.108    295 193092.216   193211.425   194706.939
+  2  LG+I          95723.072    296 192038.144   192158.242   193658.340
+  3  LG+G4         90818.740    296 182229.481   182349.579   183849.677
+  4  LG+I+G4       90770.357    297 182134.714   182255.707   183760.385
+  5  LG+R2         91524.317    297 183642.634   183763.627   185268.304
+  6  LG+R3         90877.695    299 182353.391   182476.183   183990.008
+  7  LG+R4         90640.009    301 181882.019   182006.627   183529.583
+  8  LG+R5         90544.265    303 181694.531   181820.971   183353.043
+  9  LG+R6         90481.757    305 181573.513   181701.802   183242.973
+ 10  LG+R7         90444.568    307 181503.136   181633.288   183183.542
+ 11  LG+R8         90422.123    309 181462.246   181594.279   183153.600
+ 12  LG+R9         90404.601    311 181431.203   181565.132   183133.504
+ 13  LG+R10        90388.825    313 181403.651   181539.493   183116.899
+ 26  LG+F+R10      89268.707    332 179201.414   179356.255   181018.662
+ 39  WAG+R10       89894.759    313 180415.517   180551.360   182128.765
+ 52  WAG+F+R10     89384.481    332 179432.963   179587.803   181250.210
+ 65  JTT+R10       89804.953    313 180235.905   180371.748   181949.154
+ 78  JTT+F+R10     89242.959    332 179149.919   179304.759   180967.166
+ 91  JTTDCMut+R10  89830.243    313 180286.485   180422.328   181999.734
+104  JTTDCMut+F+R10 89252.321    332 179168.643   179323.483   180985.890
+117  DCMut+R10     89834.356    313 180294.712   180430.555   182007.961
+130  DCMut+F+R10   89256.567    332 179177.134   179331.975   180994.382
+143  VT+R10        89921.193    313 180468.387   180604.229   182181.635
+156  VT+F+R10      89233.165    332 179130.331   179285.171   180947.578
+169  PMB+R10       90271.041    313 181168.083   181303.925   182881.331
+182  PMB+F+R10     89503.250    332 179670.499   179825.340   181487.747
+195  Blosum62+R10  90700.010    313 182026.021   182161.863   183739.269
+208  Blosum62+F+R10 89500.028    332 179664.057   179818.897   181481.304
+221  Dayhoff+R10   89833.878    313 180293.756   180429.598   182007.004
+234  Dayhoff+F+R10 89256.688    332 179177.375   179332.216   180994.623
+247  mtREV+R10     93924.226    313 188474.451   188610.294   190187.700
+260  mtREV+F+R10   90094.558    332 180853.117   181007.957   182670.364
+273  mtART+R10     94612.353    313 189850.705   189986.548   191563.954
+286  mtART+F+R10   90183.620    332 181031.240   181186.081   182848.488
+299  mtZOA+R10     92905.415    313 186436.829   186572.671   188150.077
+312  mtZOA+F+R10   89741.631    332 180147.261   180302.101   181964.509
+325  mtMet+R10     94427.196    313 189480.393   189616.235   191193.641
+338  mtMet+F+R10   89737.892    332 180139.784   180294.624   181957.031
+351  mtVer+R10     93903.378    313 188432.757   188568.599   190146.005
+364  mtVer+F+R10   90285.758    332 181235.517   181390.357   183052.764
+377  mtInv+R10     95652.621    313 191931.242   192067.085   193644.491
+390  mtInv+F+R10   89511.024    332 179686.049   179840.889   181503.296
+403  mtMAM+R10     94900.234    313 190426.469   190562.311   192139.717
+416  mtMAM+F+R10   90753.076    332 182170.152   182324.993   183987.400
+429  HIVb+R10      91821.084    313 184268.169   184404.011   185981.417
+442  HIVb+F+R10    89997.725    332 180659.449   180814.290   182476.697
+455  HIVw+R10      94682.816    313 189991.631   190127.474   191704.880
+468  HIVw+F+R10    91126.124    332 182916.248   183071.089   184733.496
+481  FLU+R10       91362.528    313 183351.057   183486.899   185064.305
+494  FLU+F+R10     89913.095    332 180490.189   180645.030   182307.437
+507  rtREV+R10     90781.673    313 182189.347   182325.189   183902.595
+520  rtREV+F+R10   89318.704    332 179301.408   179456.248   181118.655
+533  cpREV+R10     90942.557    313 182511.114   182646.957   184224.363
+546  cpREV+F+R10   89696.681    332 180057.362   180212.203   181874.610
+Akaike Information Criterion:           VT+F+R10
+Corrected Akaike Information Criterion: VT+F+R10
+Bayesian Information Criterion:         VT+F+R10
+Best-fit model: VT+F+R10 chosen according to BIC
+
+All model information printed to hox.homologs.al.fas.model.gz
+CPU time for ModelFinder: 50568.365 seconds (14h:2m:48s)
+Wall-clock time for ModelFinder: 3704.095 seconds (1h:1m:44s)
+
+NOTE: 343 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -89233.165
+Optimal log-likelihood: -89233.085
+Site proportion and rates:  (0.033,0.010) (0.034,0.056) (0.026,0.103) (0.016,0.179) (0.062,0.312) (0.030,0.428) (0.059,0.561) (0.323,0.879) (0.377,1.459) (0.040,2.306)
+Parameters optimization took 1 rounds (4.134 sec)
+Computing ML distances based on estimated model parameters... 6.890 sec
+Computing BIONJ tree...
+0.015 seconds
+Log-likelihood of BIONJ tree: -89480.152
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 15.434 second
+Computing log-likelihood of 98 initial trees ... 22.621 seconds
+Current best score: -89233.085
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -89226.919
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -89210.443
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 9: -89194.721
+Iteration 10 / LogL: -89302.215 / Time: 0h:2m:29s
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 17: -89186.284
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 20: -89174.308
+Iteration 20 / LogL: -89174.308 / Time: 0h:4m:30s
+Finish initializing candidate tree set (20)
+Current best tree score: -89174.308 / CPU time: 263.035
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 22: -89169.776
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 23: -89163.853
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 26: -89158.631
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 28: -89156.367
+Iteration 30 / LogL: -89157.131 / Time: 0h:5m:51s (0h:19m:47s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 31: -89154.500
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 34: -89150.173
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 40: -89144.331
+Iteration 40 / LogL: -89144.331 / Time: 0h:7m:8s (0h:18m:18s left)
+Iteration 50 / LogL: -89155.410 / Time: 0h:8m:1s (0h:14m:44s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 54: -89141.420
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 59: -89141.010
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 60: -89140.840
+Iteration 60 / LogL: -89140.840 / Time: 0h:9m:8s (0h:15m:30s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 62: -89138.436
+Iteration 70 / LogL: -89140.781 / Time: 0h:10m:9s (0h:13m:32s left)
+Iteration 80 / LogL: -89141.872 / Time: 0h:11m:2s (0h:11m:27s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 87: -89136.761
+Iteration 90 / LogL: -89145.598 / Time: 0h:12m:2s (0h:13m:7s left)
+Iteration 100 / LogL: -89148.249 / Time: 0h:12m:56s (0h:11m:22s left)
+Iteration 110 / LogL: -89139.188 / Time: 0h:13m:50s (0h:9m:46s left)
+Iteration 120 / LogL: -89139.700 / Time: 0h:14m:42s (0h:8m:17s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 128: -89136.538
+Iteration 130 / LogL: -89152.262 / Time: 0h:15m:37s (0h:11m:52s left)
+Iteration 140 / LogL: -89144.094 / Time: 0h:16m:29s (0h:10m:26s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 148: -89136.363
+Iteration 150 / LogL: -89147.540 / Time: 0h:17m:21s (0h:11m:25s left)
+Iteration 160 / LogL: -89143.455 / Time: 0h:18m:11s (0h:10m:4s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 167: -89136.037
+Iteration 170 / LogL: -89137.056 / Time: 0h:19m:6s (0h:10m:57s left)
+Iteration 180 / LogL: -89136.835 / Time: 0h:19m:57s (0h:9m:42s left)
+Iteration 190 / LogL: -89142.535 / Time: 0h:20m:45s (0h:8m:27s left)
+Iteration 200 / LogL: -89141.693 / Time: 0h:21m:34s (0h:7m:15s left)
+Iteration 210 / LogL: -89142.784 / Time: 0h:22m:27s (0h:6m:7s left)
+Iteration 220 / LogL: -89138.573 / Time: 0h:23m:18s (0h:5m:0s left)
+Iteration 230 / LogL: -89139.808 / Time: 0h:24m:11s (0h:3m:54s left)
+Iteration 240 / LogL: -89139.362 / Time: 0h:25m:2s (0h:2m:49s left)
+Iteration 250 / LogL: -89136.906 / Time: 0h:25m:54s (0h:1m:46s left)
+Iteration 260 / LogL: -89137.002 / Time: 0h:26m:45s (0h:0m:43s left)
+TREE SEARCH COMPLETED AFTER 268 ITERATIONS / Time: 0h:27m:25s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -89136.037
+2. Current log-likelihood: -89135.986
+3. Current log-likelihood: -89135.954
+4. Current log-likelihood: -89135.934
+5. Current log-likelihood: -89135.914
+6. Current log-likelihood: -89135.893
+7. Current log-likelihood: -89135.873
+8. Current log-likelihood: -89135.855
+9. Current log-likelihood: -89135.835
+10. Current log-likelihood: -89135.816
+11. Current log-likelihood: -89135.798
+12. Current log-likelihood: -89135.779
+13. Current log-likelihood: -89135.761
+14. Current log-likelihood: -89135.743
+15. Current log-likelihood: -89135.724
+16. Current log-likelihood: -89135.706
+17. Current log-likelihood: -89135.689
+18. Current log-likelihood: -89135.670
+19. Current log-likelihood: -89135.653
+20. Current log-likelihood: -89135.636
+21. Current log-likelihood: -89135.618
+22. Current log-likelihood: -89135.601
+23. Current log-likelihood: -89135.585
+24. Current log-likelihood: -89135.569
+25. Current log-likelihood: -89135.552
+26. Current log-likelihood: -89135.535
+27. Current log-likelihood: -89135.519
+28. Current log-likelihood: -89135.503
+29. Current log-likelihood: -89135.487
+30. Current log-likelihood: -89135.471
+31. Current log-likelihood: -89135.455
+32. Current log-likelihood: -89135.439
+33. Current log-likelihood: -89135.424
+34. Current log-likelihood: -89135.409
+35. Current log-likelihood: -89135.393
+36. Current log-likelihood: -89135.378
+37. Current log-likelihood: -89135.363
+38. Current log-likelihood: -89135.348
+39. Current log-likelihood: -89135.334
+40. Current log-likelihood: -89135.318
+41. Current log-likelihood: -89135.304
+42. Current log-likelihood: -89135.290
+43. Current log-likelihood: -89135.275
+44. Current log-likelihood: -89135.261
+45. Current log-likelihood: -89135.247
+46. Current log-likelihood: -89135.233
+47. Current log-likelihood: -89135.219
+48. Current log-likelihood: -89135.205
+49. Current log-likelihood: -89135.192
+50. Current log-likelihood: -89135.178
+51. Current log-likelihood: -89135.166
+52. Current log-likelihood: -89135.152
+53. Current log-likelihood: -89135.139
+54. Current log-likelihood: -89135.126
+55. Current log-likelihood: -89135.113
+56. Current log-likelihood: -89135.101
+57. Current log-likelihood: -89135.088
+58. Current log-likelihood: -89135.075
+59. Current log-likelihood: -89135.062
+60. Current log-likelihood: -89135.049
+61. Current log-likelihood: -89135.037
+62. Current log-likelihood: -89135.025
+63. Current log-likelihood: -89135.013
+64. Current log-likelihood: -89135.002
+65. Current log-likelihood: -89134.990
+66. Current log-likelihood: -89134.977
+67. Current log-likelihood: -89134.966
+68. Current log-likelihood: -89134.954
+69. Current log-likelihood: -89134.942
+70. Current log-likelihood: -89134.930
+71. Current log-likelihood: -89134.920
+72. Current log-likelihood: -89134.909
+73. Current log-likelihood: -89134.897
+74. Current log-likelihood: -89134.885
+75. Current log-likelihood: -89134.875
+76. Current log-likelihood: -89134.865
+77. Current log-likelihood: -89134.855
+78. Current log-likelihood: -89134.844
+79. Current log-likelihood: -89134.834
+80. Current log-likelihood: -89134.823
+81. Current log-likelihood: -89134.813
+82. Current log-likelihood: -89134.802
+83. Current log-likelihood: -89134.792
+84. Current log-likelihood: -89134.782
+Optimal log-likelihood: -89134.769
+Site proportion and rates:  (0.032,0.008) (0.035,0.054) (0.029,0.108) (0.013,0.192) (0.063,0.305) (0.021,0.412) (0.068,0.556) (0.316,0.885) (0.381,1.438) (0.043,2.324)
+Parameters optimization took 84 rounds (162.237 sec)
+BEST SCORE FOUND : -89134.769
+Total tree length: 200.103
+
+Total number of iterations: 268
+CPU time used for tree search: 22681.373 sec (6h:18m:1s)
+Wall-clock time used for tree search: 1638.434 sec (0h:27m:18s)
+Total CPU time used: 25045.771 sec (6h:57m:25s)
+Total wall-clock time used: 1808.166 sec (0h:30m:8s)
+
+Analysis results written to: 
+  IQ-TREE report:                hox.homologs.al.fas.iqtree
+  Maximum-likelihood tree:       hox.homologs.al.fas.treefile
+  Likelihood distances:          hox.homologs.al.fas.mldist
+  Screen log file:               hox.homologs.al.fas.log
+
+Date and Time: Wed Jun  1 05:58:38 2022
