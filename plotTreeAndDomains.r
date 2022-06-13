@@ -1,39 +1,22 @@
 #!/usr/bin/env Rscript
 args = commandArgs(trailingOnly=TRUE)
 
-#mkdir /home/ec2-user/tools/Rlib4
-#wget https://raw.githubusercontent.com/Bio312/lab4files/main/plotTreeAndDomains.r
-#Rscript --vanilla plotTreeAndDomains.r hox.bs.mid.suptree hox.rps-blast.out
-
+# wget https://raw.githubusercontent.com/Bio312/lab4files/main/plotTreeAndDomains.r
+# sudo /usr/local/bin/Rscript  --vanilla plotTreeAndDomains.r hox.bs.mid.suptree hox.rps-blast.out
 
 # test if there is at least one argument: if not, return an error
 if (length(args)<2) {
   stop("You must provide a tree and then domain file.", call.=FALSE)
 } 
 
-# .libPaths(c("/home/ec2-user/tools/Rlib4","/usr/local/lib64/R/library"))
-
-#install.packages("drawProteins", dependencies = TRUE,repos = "http://cran.us.r-project.org",lib="/home/ec2-user/tools/Rlib4")
-
-
-
-#dev_mode(on=TRUE)
-#install.packages("https://cran.r-project.org/src/contrib/Archive/rlang/rlang_0.4.10.tar.gz", repos = NULL, type="source",lib="/home/ec2-user/R-dev")
-#devtools::install_github('brennanpincardiff/drawProteins')
-
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
-
 BiocManager::install("drawProteins")
 
-#library(rlang,lib.loc="/home/ec2-user/R-dev")
 library(ggtree)
 library(data.table)
-#library(drawProteins,lib.loc="/home/ec2-user/tools/Rlib4")
 library(drawProteins)
 library(ggplot2)
-
-
 
 hoxt <- read.tree(args[1]) #"hox.bs.mid.suptree"
 
