@@ -11,17 +11,14 @@ if (length(args)<2) {
   stop("You must provide a tree and then domain file.", call.=FALSE)
 } 
 
-
-if (!require("ggtree")) install.packages("ggtree", dependencies = TRUE,repos = "http://cran.us.r-project.org",lib="/home/ec2-user/tools/Rlib4")
-if (!require("data.table")) install.packages("data.table", dependencies = TRUE,repos = "http://cran.us.r-project.org",lib="/home/ec2-user/tools/Rlib4")
 if (!require("drawProteins")) install.packages("drawProteins", dependencies = TRUE,repos = "http://cran.us.r-project.org",lib="/home/ec2-user/tools/Rlib4")
-if (!require("ggplot2")) install.packages("ggplot2", dependencies = TRUE,repos = "http://cran.us.r-project.org",lib="/home/ec2-user/tools/Rlib4")
 
 library(ggtree)
 library(data.table)
-library(drawProteins)
+library(drawProteins,lib.loc="/home/ec2-user/tools/Rlib4")
 library(ggplot2)
-library(ggrepel)
+
+
 
 hoxt <- read.tree(args[1]) #"hox.bs.mid.suptree"
 
