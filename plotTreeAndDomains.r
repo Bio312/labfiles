@@ -15,6 +15,7 @@ if (length(args)<2) {
 
 #install.packages("drawProteins", dependencies = TRUE,repos = "http://cran.us.r-project.org",lib="/home/ec2-user/tools/Rlib4")
 
+install.packages("https://cran.r-project.org/src/contrib/Archive/rlang/rlang_0.4.10.tar.gz", repos = NULL, type="source")
 if (!require(devtools)) {
     install.packages('devtools')
 }
