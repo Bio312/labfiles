@@ -17,9 +17,14 @@ if (length(args)<2) {
 
 
 
-dev_mode(on=TRUE)
+#dev_mode(on=TRUE)
 #install.packages("https://cran.r-project.org/src/contrib/Archive/rlang/rlang_0.4.10.tar.gz", repos = NULL, type="source",lib="/home/ec2-user/R-dev")
-devtools::install_github('brennanpincardiff/drawProteins')
+#devtools::install_github('brennanpincardiff/drawProteins')
+
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("drawProteins")
 
 #library(rlang,lib.loc="/home/ec2-user/R-dev")
 library(ggtree)
@@ -74,5 +79,7 @@ multiplot(t, p,ncol=2)
 dev.off()
 
 print(paste0(args[1],args[2],".pdf has been outputted"))
+
+
 
 
