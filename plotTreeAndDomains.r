@@ -15,10 +15,11 @@ if (length(args)<2) {
 
 #install.packages("drawProteins", dependencies = TRUE,repos = "http://cran.us.r-project.org",lib="/home/ec2-user/tools/Rlib4")
 
-if (!require("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-
-BiocManager::install("drawProteins")
+if (!require(devtools)) {
+    install.packages('devtools')
+}
+dev_mode(on=TRUE)
+devtools::install_github('brennanpincardiff/drawProteins')
 
 library(ggtree)
 library(data.table)
