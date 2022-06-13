@@ -1,8 +1,9 @@
 #!/usr/bin/env Rscript
 args = commandArgs(trailingOnly=TRUE)
 
+#mkdir /home/ec2-user/tools/Rlib4
 #wget https://raw.githubusercontent.com/Bio312/lab4files/main/plotTreeAndDomains.r
-#sudo Rscript --vanilla plotTreeAndDomains.r hox.bs.mid.suptree hox.rps-blast.out
+#Rscript --vanilla plotTreeAndDomains.r hox.bs.mid.suptree hox.rps-blast.out
 
 
 # test if there is at least one argument: if not, return an error
@@ -11,10 +12,10 @@ if (length(args)<2) {
 } 
 
 
-if (!require("ggtree")) install.packages("ggtree", dependencies = TRUE,repos = "http://cran.us.r-project.org")
-if (!require("data.table")) install.packages("data.table", dependencies = TRUE,repos = "http://cran.us.r-project.org")
-if (!require("drawProteins")) install.packages("drawProteins", dependencies = TRUE,repos = "http://cran.us.r-project.org")
-if (!require("ggplot2")) install.packages("ggplot2", dependencies = TRUE,repos = "http://cran.us.r-project.org")
+if (!require("ggtree")) install.packages("ggtree", dependencies = TRUE,repos = "http://cran.us.r-project.org",lib="/home/ec2-user/tools/Rlib4")
+if (!require("data.table")) install.packages("data.table", dependencies = TRUE,repos = "http://cran.us.r-project.org",lib="/home/ec2-user/tools/Rlib4")
+if (!require("drawProteins")) install.packages("drawProteins", dependencies = TRUE,repos = "http://cran.us.r-project.org",lib="/home/ec2-user/tools/Rlib4")
+if (!require("ggplot2")) install.packages("ggplot2", dependencies = TRUE,repos = "http://cran.us.r-project.org",lib="/home/ec2-user/tools/Rlib4")
 
 library(ggtree)
 library(data.table)
