@@ -11,7 +11,7 @@ if (length(args)<2) {
   stop("You must provide a tree and then domain file.", call.=FALSE)
 } 
 
-.libPaths(c("/home/ec2-user/tools/Rlib4","/Library/Frameworks/R.framework/Versions/4.1/Resources/library"))
+.libPaths(c("/home/ec2-user/tools/Rlib4","/usr/local/lib64/R/library"))
 
 install.packages("drawProteins", dependencies = TRUE,repos = "http://cran.us.r-project.org",lib="/home/ec2-user/tools/Rlib4")
 
