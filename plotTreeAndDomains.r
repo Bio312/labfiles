@@ -15,13 +15,12 @@ if (length(args)<2) {
 
 #install.packages("drawProteins", dependencies = TRUE,repos = "http://cran.us.r-project.org",lib="/home/ec2-user/tools/Rlib4")
 
-
 if (!require(devtools)) {
     install.packages('devtools')
 }
 dev_mode(on=TRUE)
+install.packages("https://cran.r-project.org/src/contrib/Archive/rlang/rlang_0.4.10.tar.gz", repos = NULL, type="source",lib="/home/ec2-user/R-dev")
 devtools::install_github('brennanpincardiff/drawProteins')
-devtools::install_github("r-lib/rlang")
 
 library(ggtree)
 library(data.table)
