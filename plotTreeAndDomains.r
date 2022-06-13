@@ -15,10 +15,6 @@ if (length(args)<2) {
 
 #install.packages("drawProteins", dependencies = TRUE,repos = "http://cran.us.r-project.org",lib="/home/ec2-user/tools/Rlib4")
 
-remove.packages("ellipsis")
-remove.packages("pkgload")
-remove.packages("usethis")
-remove.packages("testthat")
 
 
 if (!require(devtools)) {
