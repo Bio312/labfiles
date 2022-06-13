@@ -11,13 +11,19 @@ if (length(args)<2) {
   stop("You must provide a tree and then domain file.", call.=FALSE)
 } 
 
-.libPaths(c("/home/ec2-user/tools/Rlib4","/usr/local/lib64/R/library"))
+# .libPaths(c("/home/ec2-user/tools/Rlib4","/usr/local/lib64/R/library"))
 
-install.packages("drawProteins", dependencies = TRUE,repos = "http://cran.us.r-project.org",lib="/home/ec2-user/tools/Rlib4")
+#install.packages("drawProteins", dependencies = TRUE,repos = "http://cran.us.r-project.org",lib="/home/ec2-user/tools/Rlib4")
+
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("drawProteins")
 
 library(ggtree)
 library(data.table)
-library(drawProteins,lib.loc="/home/ec2-user/tools/Rlib4")
+#library(drawProteins,lib.loc="/home/ec2-user/tools/Rlib4")
+library(drawProteins)
 library(ggplot2)
 
 
