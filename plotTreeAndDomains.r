@@ -17,9 +17,6 @@ if (length(args)<2) {
 
 
 
-if (!require(devtools)) {
-    install.packages('devtools')
-}
 dev_mode(on=TRUE)
 #install.packages("https://cran.r-project.org/src/contrib/Archive/rlang/rlang_0.4.10.tar.gz", repos = NULL, type="source",lib="/home/ec2-user/R-dev")
 devtools::install_github('brennanpincardiff/drawProteins')
