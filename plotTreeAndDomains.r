@@ -11,7 +11,9 @@ if (length(args)<2) {
   stop("You must provide a tree and then domain file.", call.=FALSE)
 } 
 
-if (!require("drawProteins")) install.packages("drawProteins", dependencies = TRUE,repos = "http://cran.us.r-project.org",lib="/home/ec2-user/tools/Rlib4")
+.libPaths(c("/home/ec2-user/tools/Rlib4","/Library/Frameworks/R.framework/Versions/4.1/Resources/library"))
+
+install.packages("drawProteins", dependencies = TRUE,repos = "http://cran.us.r-project.org",lib="/home/ec2-user/tools/Rlib4")
 
 library(ggtree)
 library(data.table)
