@@ -20,8 +20,8 @@ library(ggplot2)
 
 hoxt <- read.tree(args[1]) #"hox.bs.mid.suptree"
 
-#t <- ggtree(hoxt, aes(x, y)) + geom_tree() + theme_tree()  + geom_tiplab(cex=0.9) + geom_text2(size=2,aes(subset = !isTip, label=label))   + ggplot2::xlim(0, 30) 
-t <- ggtree(hoxt, aes(x, y)) + geom_tree() + theme_tree()  + geom_tiplab(cex=0.9) + geom_text2(size=2,aes(subset = !isTip, label=label)) + ggplot2::xlim(0, 0.389*(sum(hoxt$edge.length))-26.389 )
+#t <- ggtree(hoxt, aes(x, y)) + geom_tree() + theme_tree()  + geom_tiplab(cex=0.9) + geom_text2(size=2,aes(subset = !isTip, label=label))   + ggplot2::xlim(0, 6) 
+t <- ggtree(hoxt, aes(x, y)) + geom_tree() + theme_tree()  + geom_tiplab(cex=0.9) + geom_text2(size=2,aes(subset = !isTip, label=label)) + ggplot2::xlim(0, max(6,0.389*(sum(hoxt$edge.length))-26.389 ))
 
 torder <- data.frame("entryName" = get_taxa_name(t), "order" = length(get_taxa_name(t)):1)
 
