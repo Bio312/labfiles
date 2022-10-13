@@ -20,7 +20,9 @@ library(ggplot2)
 
 hoxt <- read.tree(args[1]) #"hox.bs.mid.suptree"
 
-t <- ggtree(hoxt, aes(x, y)) + geom_tree() + theme_tree()  + geom_tiplab(cex=0.9) + geom_text2(size=2,aes(subset = !isTip, label=label)) + ggplot2::xlim(0, 5.5)
+#t <- ggtree(hoxt, aes(x, y)) + geom_tree() + theme_tree()  + geom_tiplab(cex=0.9) + geom_text2(size=2,aes(subset = !isTip, label=label))   + ggplot2::xlim(0, 30) 
+t <- ggtree(hoxt, aes(x, y)) + geom_tree() + theme_tree()  + geom_tiplab(cex=0.9) + geom_text2(size=2,aes(subset = !isTip, label=label)) + ggplot2::xlim(0, 0.389*(sum(hoxt$edge.length))-26.389 )
+
 torder <- data.frame("entryName" = get_taxa_name(t), "order" = length(get_taxa_name(t)):1)
 
 hoxd <- fread(args[2]) #"hox.rps-blast.out"
@@ -49,18 +51,24 @@ p <- draw_domains(p, rel_data3,label_domains = FALSE,label_size=0.7,show.legend=
     theme(axis.ticks = element_blank(), 
         axis.text.y = element_blank()) +
     theme(panel.border = element_blank())+
- theme(legend.text=element_text(size=2))+
+ theme(legend.text=element_text(size=4))+
   theme(legend.key.size = unit(0.15, 'cm'))+
     theme(axis.title.x=element_blank(),
         axis.text.x=element_blank(),
         axis.ticks.x=element_blank())+
         theme(legend.title= element_blank())+
      theme(plot.margin=unit(c(-5,5,-5,-5), "mm"))+
-# theme(legend.position = c(0.1, 0.15)) + 
-labs(fill="")
+# theme(legend.position = c(1,1)) + 
+#theme(legend.position="right", legend.box = "vertical")+
+ theme(legend.position = c(0, 0.1)) +
+labs(fill="") +
+   theme(panel.background=element_rect(fill="transparent",colour=NA),
+      plot.background=element_rect(fill="transparent",colour=NA),
+      legend.key = element_rect(fill = "transparent", colour = "transparent"), 
+legend.background = element_rect(fill="transparent"))
 
-pdf(args[3])
-multiplot(t, p,ncol=2)
+pdf(args[3],paper="USr",width=10.5,height=7)
+multiplot(t, p,ncol=2,widths=c(5,2))
 dev.off()
 
 print(paste0(args[3],", a pdf file, has been outputted"))
