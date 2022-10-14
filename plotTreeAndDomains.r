@@ -46,15 +46,16 @@ rel_data1 <- rbind(rel_data0,reldatachain)
 rel_data2 <- as.data.frame(rel_data1[,c(6,5,3,4,2,1,1)])
 rel_data2$taxid <- 1
 colnames(rel_data2) <-  c( "type", "description", "begin","end","length","accession","entryName","taxid")
-rel_data2$description <- sapply(rel_data2$description, function(dx) substr(dx, 1, 30))
+rel_data2$description <- sapply(rel_data2$description, function(dx) substr(dx, 1, 100))
 rel_data3 <- merge(rel_data2,torder,all.x=TRUE,all.y=TRUE)
 
 draw_canvas(rel_data3) -> p0
 
 p1 <- draw_chains(p0, rel_data3,label_chains = FALSE,  outline = "black")
 
+p2 <- draw_domains(p1,rel_data3,label_domains=FALSE,show.legend=TRUE)
 
-p <- draw_domains(p1, rel_data3,label_domains = FALSE,label_size=0.7,show.legend=TRUE) + theme_bw(base_size = 20) + # white background
+p <- draw_domains(p1, rel_data3,label_domains = FALSE,label_size=0.7,show.legend=FALSE) + theme_bw(base_size = 20) + # white background
     theme(panel.grid.minor=element_blank(), 
         panel.grid.major=element_blank()) +
     theme(axis.ticks = element_blank(), 
@@ -79,6 +80,7 @@ legend.background = element_rect(fill="transparent"))
 
 pdf(args[4],paper="USr",width=10.5,height=7)
 multiplot(t, p,ncol=2,widths=c(8,2))
+p2
 dev.off()
 
 print(paste0(args[3],", a pdf file, has been outputted"))
