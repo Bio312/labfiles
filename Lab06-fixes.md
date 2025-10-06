@@ -11,6 +11,19 @@ To run, usage is the same as for plotTreeAndDomains3.r:
 Rscript --vanilla ~/lab06-$MYGIT/plotTreeAndDomains3.r <treefile> <rps-blast.out> <homologs.fas> <output.pdf>
 ```
 
+# Option 1 
+If you have messed up your jupyter notebook, and want the original copy of the jupyter notebook, you can grab it.
+First, rename your current notebook:
+```bash
+mv ~/lab06-$MYGIT/myoglobin/BIO312_Myoglobin_Visualization.ipynb ~/lab06-$MYGIT/myoglobin/BIO312_Myoglobin_Visualization.old.ipynb
+```
+
+Now, grab the original version that you cloned with your lab:
+```bash
+cd ~/lab06-$MYGIT/myoglobin/
+wget
+```
+
 # Option 2 Fixes
 ## Compute net charge for each PQR
 For Option 2, under: *Compute net charge for each PQR*
