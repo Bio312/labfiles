@@ -1,3 +1,13 @@
+# Error with Plot Trees and Domains R script
+Replace `plotTreeAndDomains2.r` with `plotTreeAndDomains3.r`
+To download:
+```bash
+cd ~/lab06-$MYGIT/
+wget 
+cd cd ~/lab06-$MYGIT/myoglobin
+```
+Rscript --vanilla plotTreeAndDomains3.r <treefile> <rps-blast.out> <homologs.fas> <output.pdf>
+
 # Option 2 Fixes
 ## Compute net charge for each PQR
 For Option 2, under: *Compute net charge for each PQR*
