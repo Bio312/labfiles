@@ -18,9 +18,8 @@ done
 Here is an adjusted script that is easier to run:
 Download the script:
 ```bash
-wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/sum_pqr_charges.py
 cd ~/lab06-$MYGIT/
-wget
+wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/sum_pqr_charges.py
 cd cd ~/lab06-$MYGIT/myoglobin
 ```
 Here is how to run the script:
@@ -32,9 +31,9 @@ python3 sum_pqr_charges.py ~/lab06-$MYGIT/myoglobin ~/lab06-$MYGIT/myoglobin/net
 Under the section: *Compare aquatic vs terrestrial proteins*
 If you have trouble running the code using cut and paste, use this python script instead. 
 To get the python script:
-```wget
+```bash
 cd ~/lab06-$MYGIT/
-wget
+wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/label_and_plot_net_charges.py
 cd cd ~/lab06-$MYGIT/myoglobin
 ```
 
