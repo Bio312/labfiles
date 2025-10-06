@@ -8,7 +8,7 @@ cd ~/lab06-$MYGIT/myoglobin
 ```
 To run, usage is the same as for plotTreeAndDomains3.r:
 ```bash
-Rscript --vanilla plotTreeAndDomains3.r <treefile> <rps-blast.out> <homologs.fas> <output.pdf>
+Rscript --vanilla ~/lab06-$MYGIT/plotTreeAndDomains3.r <treefile> <rps-blast.out> <homologs.fas> <output.pdf>
 ```
 
 # Option 2 Fixes
@@ -37,7 +37,7 @@ cd ~/lab06-$MYGIT/myoglobin
 ```
 Here is how to run the script:
 ```bash
-python3 sum_pqr_charges.py ~/lab06-$MYGIT/myoglobin ~/lab06-$MYGIT/myoglobin/net_charges.tsv
+python3 ~/lab06-$MYGIT/sum_pqr_charges.py ~/lab06-$MYGIT/myoglobin ~/lab06-$MYGIT/myoglobin/net_charges.tsv
 ```
 
 ## Fix: Compare aquatic vs terrestrial proteins
@@ -52,7 +52,7 @@ cd ~/lab06-$MYGIT/myoglobin
 
 To run the python script:
 ```bash
-python3 label_and_plot_net_charges.py \
+python3 ~/lab06-$MYGIT/label_and_plot_net_charges.py \
   --charges     ~/lab06-$MYGIT/myoglobin/net_charges.tsv \
   --species-key ~/lab06-$MYGIT/species_key.csv \
   --refseq-map  ~/lab03-$MYGIT/myoglobin/myoglobin.blastp.detail.filtered.out \
@@ -70,7 +70,7 @@ Previously, we generated `.pqr` files with **pdb2pqr**. Now we’ll use simple b
 Charges are already embedded in your `.pqr` files (last two columns). This script will sum them:
 
 ```bash
-python3 sum_pqr_charges.py ~/lab06-$MYGIT/myoglobin ~/lab06-$MYGIT/myoglobin/net_charges.tsv
+python3 ~/lab06-$MYGIT/sum_pqr_charges.py ~/lab06-$MYGIT/myoglobin ~/lab06-$MYGIT/myoglobin/net_charges.tsv
 ```
 
 Look at the resulting tab-separated file `net_charges.tsv` with each protein and its net charge.  
@@ -176,7 +176,7 @@ Caveats:
 Now combine your net charge results with the `species_key.csv` file to make a simple boxplot:
 
 ```bash
-python3 label_and_plot_net_charges.py \
+python3 ~/lab06-$MYGIT/label_and_plot_net_charges.py \
   --charges     ~/lab06-$MYGIT/myoglobin/net_charges.tsv \
   --species-key ~/lab06-$MYGIT/species_key.csv \
   --refseq-map  ~/lab03-$MYGIT/myoglobin/myoglobin.blastp.detail.filtered.out \
