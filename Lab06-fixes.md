@@ -50,6 +50,8 @@ Download the script:
 ```bash
 cd ~/lab06-$MYGIT/
 wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/sum_pqr_charges.py
+wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/pqr_to_charges_pdb.py
+wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/dssp_batch_summary_mdtraj.py
 cd ~/lab06-$MYGIT/myoglobin
 ```
 Here is how to run the script:
