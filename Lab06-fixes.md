@@ -37,6 +37,7 @@ cd ~/lab06-$MYGIT/myoglobin
 ```
 Here is how to run the script:
 ```bash
+mamba activate bio312
 python3 ~/lab06-$MYGIT/sum_pqr_charges.py ~/lab06-$MYGIT/myoglobin ~/lab06-$MYGIT/myoglobin/net_charges.tsv
 ```
 
@@ -52,6 +53,7 @@ cd ~/lab06-$MYGIT/myoglobin
 
 To run the python script:
 ```bash
+mamba activate bio312
 python3 ~/lab06-$MYGIT/label_and_plot_net_charges.py \
   --charges     ~/lab06-$MYGIT/myoglobin/net_charges.tsv \
   --species-key ~/lab06-$MYGIT/species_key.csv \
@@ -70,6 +72,7 @@ Previously, we generated `.pqr` files with **pdb2pqr**. Now we’ll use simple b
 Charges are already embedded in your `.pqr` files (last two columns). This script will sum them:
 
 ```bash
+mamba activate bio312
 python3 ~/lab06-$MYGIT/sum_pqr_charges.py ~/lab06-$MYGIT/myoglobin ~/lab06-$MYGIT/myoglobin/net_charges.tsv
 ```
 
@@ -95,6 +98,7 @@ If this worked it should say "Done: created #/# charges PDBs."
 Next, run the following loop to render the PDB structures colored by these charges:
 
 ```bash
+mamba activate bio312
 python3 ~/lab06-$MYGIT/render_charge_pngs.py ~/lab06-"$MYGIT"/myoglobin
 ```
 
@@ -176,6 +180,7 @@ Caveats:
 Now combine your net charge results with the `species_key.csv` file to make a simple boxplot:
 
 ```bash
+mamba activate bio312
 python3 ~/lab06-$MYGIT/label_and_plot_net_charges.py \
   --charges     ~/lab06-$MYGIT/myoglobin/net_charges.tsv \
   --species-key ~/lab06-$MYGIT/species_key.csv \
@@ -215,6 +220,7 @@ mamba install -y -c conda-forge mdtraj pandas matplotlib
 
 Josh made this script to complete the analysis of secondary structure:
 ```bash
+mamba activate bio312
 python3 ~/lab06-$MYGIT/dssp_batch_summary_mdtraj.py \
   --pdb-dir   ~/lab06-$MYGIT/myoglobin \
   --species-key ~/lab06-$MYGIT/species_key.csv \
