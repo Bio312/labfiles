@@ -17,13 +17,14 @@ done
 
 Here is an adjusted script that is easier to run:
 Download the script:
-```wget
+```bash
+wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/sum_pqr_charges.py
 cd ~/lab06-$MYGIT/
 wget
 cd cd ~/lab06-$MYGIT/myoglobin
 ```
 Here is how to run the script:
-```R
+```bash
 python3 sum_pqr_charges.py ~/lab06-$MYGIT/myoglobin ~/lab06-$MYGIT/myoglobin/net_charges.tsv
 ```
 
