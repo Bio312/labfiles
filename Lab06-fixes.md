@@ -3,10 +3,13 @@ Replace `plotTreeAndDomains2.r` with `plotTreeAndDomains3.r`
 To download:
 ```bash
 cd ~/lab06-$MYGIT/
-wget 
+wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/plotTreeAndDomains3.r
 cd cd ~/lab06-$MYGIT/myoglobin
 ```
+To run, usage is the same as for plotTreeAndDomains3.r:
+```bash
 Rscript --vanilla plotTreeAndDomains3.r <treefile> <rps-blast.out> <homologs.fas> <output.pdf>
+```
 
 # Option 2 Fixes
 ## Compute net charge for each PQR
