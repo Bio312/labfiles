@@ -21,7 +21,7 @@ mv ~/lab06-$MYGIT/myoglobin/BIO312_Myoglobin_Visualization.ipynb ~/lab06-$MYGIT/
 Now, grab the original version that you cloned with your lab:
 ```bash
 cd ~/lab06-$MYGIT/myoglobin/
-wget
+wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/BIO312_Myoglobin_Visualization.ipynb
 ```
 
 # Option 2 Fixes
