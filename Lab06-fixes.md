@@ -4,7 +4,7 @@ To download:
 ```bash
 cd ~/lab06-$MYGIT/
 wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/plotTreeAndDomains3.r
-cd cd ~/lab06-$MYGIT/myoglobin
+cd ~/lab06-$MYGIT/myoglobin
 ```
 To run, usage is the same as for plotTreeAndDomains3.r:
 ```bash
@@ -33,7 +33,7 @@ Download the script:
 ```bash
 cd ~/lab06-$MYGIT/
 wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/sum_pqr_charges.py
-cd cd ~/lab06-$MYGIT/myoglobin
+cd ~/lab06-$MYGIT/myoglobin
 ```
 Here is how to run the script:
 ```bash
@@ -47,7 +47,7 @@ To get the python script:
 ```bash
 cd ~/lab06-$MYGIT/
 wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/label_and_plot_net_charges.py
-cd cd ~/lab06-$MYGIT/myoglobin
+cd ~/lab06-$MYGIT/myoglobin
 ```
 
 To run the python script:
