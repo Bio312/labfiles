@@ -11,10 +11,6 @@ To run, usage is the same as for plotTreeAndDomains3.r:
 Rscript --vanilla ~/lab06-$MYGIT/plotTreeAndDomains3.r <treefile> <rps-blast.out> <homologs.fas> <output.pdf>
 ```
 # Part 2: Net Charge Analysis
-## After you have finished Part 2 (Option 1 or Option 2), you should have:
-- net_charge_boxplot.png (OPTION 1) and/or netcharge_boxplot.png (OPTION 2)
-- net_charge_summary.csv (OPTION 1) and/or net_charges_labeled.tsv (OPTION 2)
-
 ## Option 1 Fix
 If you have messed up your jupyter notebook, and want the original copy of the jupyter notebook, you can grab it.
 First, rename your current notebook:
