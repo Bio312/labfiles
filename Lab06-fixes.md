@@ -116,6 +116,13 @@ If this worked it should say "Done: created #/# charges PDBs."
 
 Next, run the following loop to render the PDB structures colored by these charges:
 
+if you haven't already, download the following code:
+```bash
+cd  ~/lab06-$MYGIT/
+wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/render_charge_pngs.py
+cd ~/lab06-$MYGIT/myoglobin
+```
+
 ```bash
 mamba activate bio312
 python3 ~/lab06-$MYGIT/render_charge_pngs.py ~/lab06-"$MYGIT"/myoglobin
