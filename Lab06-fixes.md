@@ -1,4 +1,4 @@
-# Error with Plot Trees and Domains R script
+# Part 1: Error with Plot Trees and Domains R script
 Replace `plotTreeAndDomains2.r` with `plotTreeAndDomains3.r`
 To download:
 ```bash
