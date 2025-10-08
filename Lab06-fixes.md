@@ -25,6 +25,8 @@ wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/BIO312_My
 ```
 
 ## Option 2 (Using the BASH Shell) Fix
+If the jupyter notebook does not work for you, use this option. 
+
 ## Compute net charge for each PQR
 For Option 2, under: *Compute net charge for each PQR*
 there is a typo in the following:
