@@ -27,36 +27,6 @@ wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/BIO312_My
 ## Option 2 (Using the BASH Shell) Fix
 If the jupyter notebook does not work for you, use this option. 
 
-## Compute net charge for each PQR
-For Option 2, under: *Compute net charge for each PQR*
-there is a typo in the following:
-```bash
-out=~/lab06-$MYGIT/myoglobin/net_charges.tsv
-: > "$out"   # truncate/create
-
-for f in ~/lab06-$MYGIT/myoglobin/*.pqr; do
-  base=$(basename "$f")
-  Z=$(awk '$1=="ATOM"||$1=="HETATM"{s+=$9} END{printf "%.3f", s}' "$f")
-  printf "%s\tNetCharge=%s\n" "$base" "$Z" >> "$out"
-done
-```
-- The typo is that the correct column for charges is $10, not $9!
-- I apologize; the output is not usable.
-
-Here is an adjusted script that is easier to run:
-Download the script:
-```bash
-cd ~/lab06-$MYGIT/
-wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/sum_pqr_charges.py
-wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/pqr_to_charges_pdb.py
-wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/dssp_batch_summary_mdtraj.py
-cd ~/lab06-$MYGIT/myoglobin
-```
-Here is how to run the script:
-```bash
-mamba activate bio312
-python3 ~/lab06-$MYGIT/sum_pqr_charges.py ~/lab06-$MYGIT/myoglobin ~/lab06-$MYGIT/myoglobin/net_charges.tsv
-```
 
 ## Fix: Compare aquatic vs terrestrial proteins
 Under the section: *Compare aquatic vs terrestrial proteins*
@@ -86,13 +56,36 @@ In this part of the lab, we want to **visualize myoglobin structures** and compa
 Previously, we generated `.pqr` files with **pdb2pqr**. Now we’ll use simple bash + python steps to make **static PNGs** of the protein surfaces.
 
 ## Compute net charge for each PQR
-Charges are already embedded in your `.pqr` files (last two columns). This script will sum them:
 
+For Option 2, under: *Compute net charge for each PQR*
+there is a typo in the following:
+```bash
+out=~/lab06-$MYGIT/myoglobin/net_charges.tsv
+: > "$out"   # truncate/create
+
+for f in ~/lab06-$MYGIT/myoglobin/*.pqr; do
+  base=$(basename "$f")
+  Z=$(awk '$1=="ATOM"||$1=="HETATM"{s+=$9} END{printf "%.3f", s}' "$f")
+  printf "%s\tNetCharge=%s\n" "$base" "$Z" >> "$out"
+done
+```
+- The typo is that the correct column for charges is $10, not $9!
+- I apologize; the output is not usable.
+
+Here is an adjusted script that is easier to run:
+Download the script:
+```bash
+cd ~/lab06-$MYGIT/
+wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/sum_pqr_charges.py
+wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/pqr_to_charges_pdb.py
+wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/dssp_batch_summary_mdtraj.py
+cd ~/lab06-$MYGIT/myoglobin
+```
+Here is how to run the script:
 ```bash
 mamba activate bio312
 python3 ~/lab06-$MYGIT/sum_pqr_charges.py ~/lab06-$MYGIT/myoglobin ~/lab06-$MYGIT/myoglobin/net_charges.tsv
 ```
-
 Look at the resulting tab-separated file `net_charges.tsv` with each protein and its net charge.  
 ```bash
 less ~/lab06-$MYGIT/myoglobin/net_charges.tsv
