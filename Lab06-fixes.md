@@ -219,6 +219,12 @@ mamba activate bio312
 mamba install -y -c conda-forge mdtraj pandas matplotlib
 ```
 
+```bash
+cd ~/lab06-$MYGIT/
+wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/dssp_batch_summary_mdtraj.py
+cd ~/lab06-$MYGIT/myoglobin
+```
+
 Josh made this script to complete the analysis of secondary structure:
 ```bash
 mamba activate bio312
