@@ -225,7 +225,7 @@ Now, take a look at this png.
 
 Is this what you see?
 
-## After you have finished Option 1 or Option 2
+## After you have finished Option 1 or Option 2, you should have:
 - net_charge_boxplot.png (OPTION 1) and/or netcharge_boxplot.png (OPTION 2)
 - net_charge_summary.csv (OPTION 1) and/or net_charges_labeled.tsv (OPTION 2)
 
