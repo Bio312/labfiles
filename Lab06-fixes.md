@@ -8,7 +8,7 @@ cd ~/lab06-$MYGIT/myoglobin
 ```
 To run, usage is the same as for plotTreeAndDomains3.r:
 ```bash
-Rscript --vanilla ~/lab06-$MYGIT/plotTreeAndDomains3.r <treefile> <rps-blast.out> <homologs.fas> <output.pdf>
+Rscript --vanilla ~/lab06-$MYGIT/plotTreeAndDomains3.r ~/lab05-$MYGIT/myoglobin/myoglobin.homologs.al.mid.treefile ~/lab06-$MYGIT/myoglobin/myoglobin.rps-blast.out ~/lab04-$MYGIT/myoglobin/myoglobin.homologs.fas ~/lab06-$MYGIT/myoglobin/myoglobin.tree.rps.pdf
 ```
 # Part 2: Net Charge Analysis
 ## Option 1 (Jupyter Notebook) Fix
