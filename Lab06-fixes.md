@@ -235,6 +235,7 @@ Is this what you see?
 
 ><img src="img/github.png" alt= “” width="20" height="20">[Github] These two files should be part of your GitHub repository.
 
+## Part 3: Using DSSP to extract secondary structure characteristics
 Now, continue with using DSSP to extract secondary structure characteristics of myoglobin.
 
 First, install some more software:
