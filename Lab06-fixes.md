@@ -96,7 +96,7 @@ Look at the resulting tab-separated file `net_charges.tsv` with each protein and
 less ~/lab06-$MYGIT/myoglobin/net_charges.tsv
 ```
 
-## 4. Visualize structures with charges (static PNGs)
+## Visualize structures with charges (static PNGs)
 We can’t use interactive viewers outside Jupyter, but we can generate PNG snapshots with `py3Dmol` (Python).  
 First, install pymol (one time only)
 ```bash
