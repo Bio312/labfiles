@@ -27,31 +27,6 @@ wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/BIO312_My
 ## Option 2 (Using the BASH Shell) Fix
 If the jupyter notebook does not work for you, use this option. 
 
-
-## Fix: Compare aquatic vs terrestrial proteins
-Under the section: *Compare aquatic vs terrestrial proteins*
-If you have trouble running the code using cut and paste, use this python script instead. 
-To get the python script:
-```bash
-cd ~/lab06-$MYGIT/
-wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/label_and_plot_net_charges.py
-cd ~/lab06-$MYGIT/myoglobin
-```
-
-To run the python script:
-```bash
-mamba activate bio312
-python3 ~/lab06-$MYGIT/label_and_plot_net_charges.py \
-  --charges     ~/lab06-$MYGIT/myoglobin/net_charges.tsv \
-  --species-key ~/lab06-$MYGIT/species_key.csv \
-  --refseq-map  ~/lab03-$MYGIT/myoglobin/myoglobin.blastp.detail.filtered.out \
-  --out-tsv     ~/lab06-$MYGIT/myoglobin/net_charges_labeled.tsv \
-  --out-plot    ~/lab06-$MYGIT/myoglobin/netcharge_boxplot.png
-```
-
-# Complete updated lab, starting at Option 2
-## Option 2: Using the BASH shell
-
 In this part of the lab, we want to **visualize myoglobin structures** and compare **electrostatic charge distributions** between aquatic and terrestrial mammals.  
 Previously, we generated `.pqr` files with **pdb2pqr**. Now we’ll use simple bash + python steps to make **static PNGs** of the protein surfaces.
 
@@ -194,8 +169,17 @@ Caveats:
 
 
 ###  Compare aquatic vs terrestrial proteins
-Now combine your net charge results with the `species_key.csv` file to make a simple boxplot:
 
+Under the section: *Compare aquatic vs terrestrial proteins*
+If you have trouble running the code using cut and paste, use this python script instead. 
+To get the python script:
+```bash
+cd ~/lab06-$MYGIT/
+wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/label_and_plot_net_charges.py
+cd ~/lab06-$MYGIT/myoglobin
+```
+
+To run the python script:
 ```bash
 mamba activate bio312
 python3 ~/lab06-$MYGIT/label_and_plot_net_charges.py \
