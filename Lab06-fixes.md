@@ -10,6 +10,23 @@ To run, usage is the same as for plotTreeAndDomains3.r:
 ```bash
 Rscript --vanilla ~/lab06-$MYGIT/plotTreeAndDomains3.r ~/lab05-$MYGIT/myoglobin/myoglobin.homologs.al.mid.treefile ~/lab06-$MYGIT/myoglobin/myoglobin.rps-blast.out ~/lab04-$MYGIT/myoglobin/myoglobin.homologs.fas ~/lab06-$MYGIT/myoglobin/myoglobin.tree.rps.pdf
 ```
+
+# Part 2: Retrieving Alphafold PDB structures
+The following script (afetch_by_uniprot2.sh) more reliably will retrieve alphafold structures.
+Note it is called afetch_by_uniprot2.sh, instead of afetch_by_uniprot.sh
+To retreive it:
+
+```bash
+cd ~/lab06-$MYGIT/
+wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/afetch_by_uniprot2.sh
+chmod +x ~/lab06-$MYGIT/afetch_by_uniprot2.sh
+```
+
+To run it:
+```bash
+~/lab06-$MYGIT/afetch_by_uniprot2.sh ~/lab06-$MYGIT/myoglobin/myoglobin_refseq_uniprot_subset.tsv ~/lab06-$MYGIT/myoglobin
+```
+
 # Part 2: Net Charge Analysis
 ## Option 1 (Jupyter Notebook) Fix
 If you have messed up your jupyter notebook, and want the original copy of the jupyter notebook, you can grab it.
