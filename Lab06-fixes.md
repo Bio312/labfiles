@@ -61,7 +61,7 @@ for f in ~/lab06-$MYGIT/myoglobin/*.pqr; do
   printf "%s\tNetCharge=%s\n" "$base" "$Z" >> "$out"
 done
 ```
-~~ The typo is that the correct column for charges is $10, not $9!~~
+~~The typo is that the correct column for charges is $10, not $9!~~
 - I apologize; the output is not usable.
 
 ** Update Oct 16 **
