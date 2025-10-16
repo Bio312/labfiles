@@ -61,16 +61,17 @@ for f in ~/lab06-$MYGIT/myoglobin/*.pqr; do
   printf "%s\tNetCharge=%s\n" "$base" "$Z" >> "$out"
 done
 ```
-- The typo is that the correct column for charges is $10, not $9!
+~~ The typo is that the correct column for charges is $10, not $9!~~
 - I apologize; the output is not usable.
 
-Here is an adjusted script that is easier to run:
+** Update Oct 16 **
+- In our PQRs, AlphaFold’s PQR lines sometimes collapse the chain+resSeq into one token (e.g., A1000) while others keep them split. That means the token count is mixed (some lines have 11 tokens, some have 10). When we used parts[9] for charge; that works when there are 11 tokens, but on the 10-token lines parts[9] is the radius, so we end up summing thousands of radii!
+
+**Here is an adjusted that fixes this issue.**
 Download the script:
 ```bash
 cd ~/lab06-$MYGIT/
-wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/sum_pqr_charges.py
-wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/pqr_to_charges_pdb.py
-wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/dssp_batch_summary_mdtraj.py
+wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/sum_pqr_chargesv2.py
 cd ~/lab06-$MYGIT/myoglobin
 ```
 Here is how to run the script:
@@ -82,6 +83,15 @@ Look at the resulting tab-separated file `net_charges.tsv` with each protein and
 ```bash
 less ~/lab06-$MYGIT/myoglobin/net_charges.tsv
 ```
+
+Other updated scripts to download:
+```bash
+cd ~/lab06-$MYGIT/
+wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/pqr_to_charges_pdb.py
+wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/dssp_batch_summary_mdtraj.py
+cd ~/lab06-$MYGIT/myoglobin
+```
+
 
 ## Visualize structures with charges (static PNGs)
 We can’t use interactive viewers outside Jupyter, but we can generate PNG snapshots with `py3Dmol` (Python).  
