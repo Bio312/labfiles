@@ -71,14 +71,14 @@ done
 Download the script:
 ```bash
 cd ~/lab06-$MYGIT/
-wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/sum_pqr_chargesv2.py
+wget https://raw.githubusercontent.com/Bio312/labfiles/refs/heads/main/sum_pqr_chargesv3.py
 cd ~/lab06-$MYGIT/myoglobin
 ```
 
-Here is how to run the script: (**Note I am calling this v2 because it is a new version of the script**)
+Here is how to run the script: (**Note I am calling this v3 because it is a new version of the script**)
 ```bash
 mamba activate bio312
-python3 ~/lab06-$MYGIT/sum_pqr_chargesv2.py ~/lab06-$MYGIT/myoglobin ~/lab06-$MYGIT/myoglobin/net_charges.tsv
+python3 ~/lab06-$MYGIT/sum_pqr_chargesv3.py ~/lab06-$MYGIT/myoglobin --no-header --sep tsv -o ~/lab06-$MYGIT/myoglobin/net_charges.tsv
 ```
 Look at the resulting tab-separated file `net_charges.tsv` with each protein and its net charge.  
 ```bash
